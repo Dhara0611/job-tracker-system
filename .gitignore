@@ -1,0 +1,15 @@
+#virtual enviorment
+venev/
+
+#enviorment variables
+.env
+
+#editor settings
+.vscode/
+
+#os files
+.DS_Store
+
+#python cache
+__pycache__/
+*.pyc

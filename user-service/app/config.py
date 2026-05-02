@@ -3,7 +3,7 @@ import os
 
 class Config:
     SECRET_KEY = os.getenv("SECRET_KEY","dev-secret")
-    DEBUG = False
+    DEBUG = True
     SQLALCHEMY_DATABASE_URI = os.getenv(
         "DATABASE_URL",
         "sqlite:///dev.db"
