@@ -1,7 +1,8 @@
 from flask import Flask
 from app.config import Config
-from app.extensions import db, migrate
+from app.extensions import db, migrate,jwt
 import app.models
+from app.blueprints.auth import auth_bp
 
 def create_app():
     app = Flask(__name__)
@@ -18,6 +19,12 @@ def create_app():
 
     #connects Flask + DB + migration system
     migrate.init_app(app, db)
+    jwt.init_app(app)
+
+    #Blueprint registration
+    app.register_blueprint(auth_bp, url_prefix = "/auth")
+
+    
 
     @app.route("/")
     def home():
