@@ -1,5 +1,5 @@
-#virtual enviorment
-venev/
+#virtual environment
+venv/
 
 #enviorment variables
 .env
@@ -13,3 +13,5 @@ venev/
 #python cache
 __pycache__/
 *.pyc
+
+instance/
