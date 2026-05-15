@@ -3,6 +3,7 @@ from app.config import Config
 from app.extensions import db, migrate,jwt
 import app.models
 from app.blueprints.auth import auth_bp
+from app.blueprints.preferences import pref_bp
 
 def create_app():
     app = Flask(__name__)
@@ -23,6 +24,7 @@ def create_app():
 
     #Blueprint registration
     app.register_blueprint(auth_bp, url_prefix = "/auth")
+    app.register_blueprint(pref_bp, url_prefix = "/preferences")
 
     
 
