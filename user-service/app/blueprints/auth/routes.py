@@ -3,84 +3,43 @@ from app.models.user import User
 from flask_jwt_extended import create_access_token, jwt_required, get_jwt_identity
 from werkzeug.security import generate_password_hash, check_password_hash
 from app.extensions import db
+from app.blueprints.auth.services import create_user, authenticate_user, get_user_profile
+from app.validators.auth_validator import RegisterSchema , LoginSchema 
+from app.validators.decorators import validate_schema
 
 auth_bp = Blueprint('auth', __name__)
 
+# Decorators are applied bottom → top (execution flows top → bottom)
+# Route should be outermost, followed by validation/auth decorators
+
 @auth_bp.route("/register", methods=["POST"])
-def register():
-    data = request.get_json()
+@validate_schema(RegisterSchema)
+def register(validated_data):
+    # data = request.get_json()
 
-    email = data.get("email")
-    password = data.get("password")
+    email = validated_data.get("email")
+    password = validated_data.get("password")
 
-    #check if data is not empty
-    if not email or not password:
-        return jsonify({
-            "error": "Email or password are required"
-        }), 400
-    
     #check is user already exists
-    existing_user = User.query.filter_by(email=email).first()
-    if existing_user:
-        return jsonify({
-            "error" : "User already exists"
-        }), 400
+
+    response , status_code = create_user(email, password)
+    return jsonify(response), status_code
     
-    try:
-        #password hashing algorithm designed for security
-        hashed_password = generate_password_hash(password, method="pbkdf2:sha256")
-
-        new_user = User(email=email, password=hashed_password)
-
-        db.session.add(new_user)
-        db.session.commit()
-
-        return jsonify({
-            "message" : "User registered successfully"
-        }), 201
-    except Exception as e:
-        db.session.rollback()
-        return jsonify(
-            {
-                "error" : str(e)
-            }
-        ), 500
-
 
 @auth_bp.route("/login", methods=["POST"])
-def login():
+@validate_schema(LoginSchema)
+def login(validated_data):
     
-    data = request.get_json()
+    # data = request.get_json()
 
-    email = data.get("email")
-    password = data.get("password")
+    email = validated_data.get("email")
+    password = validated_data.get("password")
 
-    #check if data is not empty
-    if not email or not password:
-        return jsonify({
-            "error": "Email or password are required"
-        }), 400
+    response, status_code = authenticate_user(email,password)
 
-    #find the user
-    user = User.query.filter_by(email=email).first()
-    if not user:
-        return jsonify({
-            "error": "Invalid credentials"
-        }), 401
+    return jsonify(response), status_code
 
-    #check the password
-    if not check_password_hash(user.password, password):
-        return jsonify({
-            "error": "Invalid credentials"
-        }), 401
 
-    #create access token
-    #JWT requires sub (subject) to be a string
-    token = create_access_token(identity=str(user.id))
-    return jsonify({
-            "message": "Login successfull",
-            "access_token": token
-        }), 200
 
 #returns the details of the user and only accessible if user sends access token
 @auth_bp.route("/profile")
@@ -90,17 +49,8 @@ def profile():
     #get_jwt_identity extracts the id from the token
     user_id = get_jwt_identity()
 
-    user = User.query.get(user_id)
-
-    if not user:
-        return jsonify({
-            "error": "user not found"
-        }), 404
-    
-    return jsonify({
-            "id" : user.id,
-            "email": user.email
-        }), 200
+    response, status_code = get_user_profile(user_id)
+    return jsonify(response), status_code
 
 
 

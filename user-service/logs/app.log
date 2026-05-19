@@ -1,0 +1,14 @@
+2026-05-15 16:39:06,239 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-15 16:39:06,239 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-05-15 16:39:16,570 INFO werkzeug : 127.0.0.1 - - [15/May/2026 16:39:16] "POST /auth/login HTTP/1.1" 200 -
+2026-05-15 16:39:52,073 INFO werkzeug : 127.0.0.1 - - [15/May/2026 16:39:52] "[32mPOST /preferences HTTP/1.1[0m" 308 -
+2026-05-15 16:39:52,081 INFO werkzeug : 127.0.0.1 - - [15/May/2026 16:39:52] "[31m[1mPOST /preferences/ HTTP/1.1[0m" 400 -
+2026-05-15 16:45:56,625 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-15 16:45:56,625 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-05-15 16:46:07,976 INFO werkzeug : 127.0.0.1 - - [15/May/2026 16:46:07] "POST /auth/login HTTP/1.1" 200 -
+2026-05-15 16:47:31,090 INFO app.blueprints.preferences.routes : This is an INFO log
+2026-05-15 16:47:31,092 WARNING app.blueprints.preferences.routes : This is a WARNING log
+2026-05-15 16:47:31,092 ERROR app.blueprints.preferences.routes : This is an ERROR log
+2026-05-15 16:47:31,095 INFO werkzeug : 127.0.0.1 - - [15/May/2026 16:47:31] "GET /preferences/test-logs HTTP/1.1" 200 -
