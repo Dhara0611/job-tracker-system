@@ -16,7 +16,8 @@ def create_user(email, password):
         #password hashing algorithm designed for security
         hashed_password = generate_password_hash(password, method="pbkdf2:sha256")
 
-        new_user = User(email=email, password=hashed_password)
+    #create a new user instance and save to the database
+        new_user = User(email=email, password=hashed_password, role="user")
 
         db.session.add(new_user)
         db.session.commit()
@@ -46,7 +47,10 @@ def authenticate_user(email, password):
 
     #create access token
     #JWT requires sub (subject) to be a string
-    token = create_access_token(identity=str(user.id))
+    token = create_access_token(identity=str(user.id),
+                                additional_claims={
+                                "role": user.role
+                                })
     return {
             "message": "Login successfull",
             "access_token": token
