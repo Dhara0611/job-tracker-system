@@ -1,0 +1,17 @@
+2026-05-29 11:48:37,514 WARNING werkzeug :  * Debugger is active!
+2026-05-29 11:48:37,526 INFO werkzeug :  * Debugger PIN: 115-558-143
+2026-05-29 11:48:39,580 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/service.py', reloading
+2026-05-29 11:48:40,041 WARNING werkzeug :  * Debugger is active!
+2026-05-29 11:48:40,048 INFO werkzeug :  * Debugger PIN: 115-558-143
+2026-05-29 11:48:50,261 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/service.py', reloading
+2026-05-29 11:48:50,771 WARNING werkzeug :  * Debugger is active!
+2026-05-29 11:48:50,786 INFO werkzeug :  * Debugger PIN: 115-558-143
+2026-05-29 11:48:53,867 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/service.py', reloading
+2026-05-29 11:48:54,348 WARNING werkzeug :  * Debugger is active!
+2026-05-29 11:48:54,357 INFO werkzeug :  * Debugger PIN: 115-558-143
+2026-05-29 12:04:11,806 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-29 12:04:11,807 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-05-29 12:04:11,807 INFO werkzeug :  * Restarting with stat
+2026-05-29 12:04:12,075 WARNING werkzeug :  * Debugger is active!
+2026-05-29 12:04:12,084 INFO werkzeug :  * Debugger PIN: 115-558-143

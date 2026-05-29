@@ -9,6 +9,10 @@ class User(db.Model):
 
     created_at = db.Column(db.DateTime, server_default=db.func.now())
 
+    
+#adding role to the model to identify user and admin
+    role = db.Column(db.String(20), nullable=False, server_default="user")
+
 # Returns a readable string representation of the User object (useful for debugging)
     def __repr__(self):
         return f"<User {self.email}>"
