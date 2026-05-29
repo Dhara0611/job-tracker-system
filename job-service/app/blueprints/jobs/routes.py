@@ -1,9 +1,13 @@
-from flask import Blueprint, jsonify,request
-from flask_jwt_extended import jwt_required, get_jwt_identity,get_jwt
-from app.blueprints.jobs.service import get_all_jobs,create_job,get_job_by_code,search_jobs
+import logging
+from flask import Blueprint, jsonify, request
+from flask_jwt_extended import jwt_required, get_jwt_identity, get_jwt
+from app.blueprints.jobs.service import get_all_jobs, create_job, get_job_by_code, search_jobs
 from app.models import Job
 from app.extensions import db
+from app.validators.job_validator import JobSchema
+from app.validators.decorators import validate_schema
 
+logger = logging.getLogger(__name__)
 
 jobs_bp = Blueprint("jobs", __name__)
 
@@ -17,17 +21,18 @@ jobs_bp = Blueprint("jobs", __name__)
 
 @jobs_bp.route("/")
 def get_jobs():
+    logger.info("Fetching job list")
 
-#get the query parameters 
-
+    # get the query parameters 
     q = request.args.get("q")
     title = request.args.get("title")
     company = request.args.get("company")
     location = request.args.get("location")
-    page = request.args.get("page",1, type=int)
-    limit = request.args.get("limit",10, type=int)
+    page = request.args.get("page", 1, type=int)
+    limit = request.args.get("limit", 10, type=int)
 
-    jobs, total  = search_jobs(q,title,company,location,page,limit)
+    logger.debug("Search params: q=%s, title=%s, company=%s, location=%s, page=%s, limit=%s", q, title, company, location, page, limit)
+    jobs, total = search_jobs(q, title, company, location, page, limit)
 
     list_of_jobs = []
     
@@ -62,27 +67,22 @@ def get_jobs():
     }), 200
 
 #endpoint to add a job
-@jobs_bp.route("/",methods = ["POST"])
-def add_job():
-
-    data = request.get_json()
-
-    if not data:
-        return jsonify({
-            "error" : "Request body is missing"
-        }),400
-    
-    job = create_job(data)
+@jobs_bp.route("/", methods=["POST"])
+@validate_schema(JobSchema)
+def add_job(validated_data):
+    logger.info("Creating new job: %s at %s", validated_data.get("title"), validated_data.get("company"))
+    job = create_job(validated_data)
+    logger.info("Created job %s", job.job_code)
     return jsonify(
         {
-            "job_code" :job.job_code,
-            "title" : job.title,
-            "company" :job.company,
-            "location" :job.location,
-        #adding status after adding it to the model
+            "job_code": job.job_code,
+            "title": job.title,
+            "company": job.company,
+            "location": job.location,
+            # adding status after adding it to the model
             "status": job.status
         }
-    ),201
+    ), 201
 
 @jobs_bp.route("/<job_code>", methods=["GET"])
 def get_job(job_code):
