@@ -12,3 +12,19 @@
 2026-05-15 16:47:31,092 WARNING app.blueprints.preferences.routes : This is a WARNING log
 2026-05-15 16:47:31,092 ERROR app.blueprints.preferences.routes : This is an ERROR log
 2026-05-15 16:47:31,095 INFO werkzeug : 127.0.0.1 - - [15/May/2026 16:47:31] "GET /preferences/test-logs HTTP/1.1" 200 -
+2026-06-11 14:59:07,498 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2026-06-11 14:59:07,498 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-06-11 14:59:07,499 INFO werkzeug :  * Restarting with stat
+2026-06-11 14:59:07,780 WARNING werkzeug :  * Debugger is active!
+2026-06-11 14:59:07,795 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-06-11 14:59:50,425 INFO werkzeug : 127.0.0.1 - - [11/Jun/2026 14:59:50] "[31m[1mPOST /auth/login HTTP/1.1[0m" 401 -
+2026-06-11 15:03:34,084 INFO werkzeug : 127.0.0.1 - - [11/Jun/2026 15:03:34] "[35m[1mPOST /auth/register HTTP/1.1[0m" 201 -
+2026-06-11 15:03:40,705 INFO werkzeug : 127.0.0.1 - - [11/Jun/2026 15:03:40] "POST /auth/login HTTP/1.1" 200 -
+2026-06-11 15:33:05,211 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2026-06-11 15:33:05,212 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-06-11 15:33:05,212 INFO werkzeug :  * Restarting with stat
+2026-06-11 15:33:05,482 WARNING werkzeug :  * Debugger is active!
+2026-06-11 15:33:05,490 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-06-11 15:33:15,876 INFO werkzeug : 127.0.0.1 - - [11/Jun/2026 15:33:15] "POST /auth/login HTTP/1.1" 200 -

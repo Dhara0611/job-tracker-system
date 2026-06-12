@@ -1,0 +1,251 @@
+2026-06-03 14:51:37,670 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-03 14:51:37,670 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-06-03 14:51:37,670 INFO werkzeug :  * Restarting with stat
+2026-06-03 14:51:37,928 WARNING werkzeug :  * Debugger is active!
+2026-06-03 14:51:37,937 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-06-03 14:52:04,465 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/application-service/app/__init__.py', reloading
+2026-06-03 14:52:04,552 INFO werkzeug :  * Restarting with stat
+2026-06-03 14:52:04,907 WARNING werkzeug :  * Debugger is active!
+2026-06-03 14:52:04,914 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-06-03 14:52:10,332 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-03 14:52:10,332 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-06-03 14:52:10,333 INFO werkzeug :  * Restarting with stat
+2026-06-03 14:52:10,617 WARNING werkzeug :  * Debugger is active!
+2026-06-03 14:52:10,623 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-06-03 16:53:46,771 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-03 16:53:46,772 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-06-03 16:53:46,772 INFO werkzeug :  * Restarting with stat
+2026-06-03 16:53:47,035 WARNING werkzeug :  * Debugger is active!
+2026-06-03 16:53:47,046 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-06-03 17:52:24,066 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-03 17:52:24,066 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-06-03 17:52:24,067 INFO werkzeug :  * Restarting with stat
+2026-06-03 17:52:24,320 WARNING werkzeug :  * Debugger is active!
+2026-06-03 17:52:24,326 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-06-03 17:54:36,005 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/application-service/app/blueprints/applications/__init__.py', reloading
+2026-06-03 17:54:36,105 INFO werkzeug :  * Restarting with stat
+2026-06-03 17:54:36,513 WARNING werkzeug :  * Debugger is active!
+2026-06-03 17:54:36,524 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-06-03 17:55:12,280 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/application-service/app/__init__.py', reloading
+2026-06-03 17:55:12,375 INFO werkzeug :  * Restarting with stat
+2026-06-03 17:55:12,802 WARNING werkzeug :  * Debugger is active!
+2026-06-03 17:55:12,807 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-06-03 17:55:15,889 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/application-service/app/__init__.py', reloading
+2026-06-03 17:55:15,958 INFO werkzeug :  * Restarting with stat
+2026-06-03 17:55:16,218 WARNING werkzeug :  * Debugger is active!
+2026-06-03 17:55:16,224 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-06-11 15:15:04,092 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5003
+2026-06-11 15:15:04,093 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-06-11 15:15:04,093 INFO werkzeug :  * Restarting with stat
+2026-06-11 15:15:04,356 WARNING werkzeug :  * Debugger is active!
+2026-06-11 15:15:04,365 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-06-11 15:16:17,863 ERROR app : Unhandled exception: 'JWT_TOKEN_LOCATION'
+Traceback (most recent call last):
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask_jwt_extended/view_decorators.py", line 167, in decorator
+    verify_jwt_in_request(
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask_jwt_extended/view_decorators.py", line 94, in verify_jwt_in_request
+    jwt_data, jwt_header, jwt_location = _decode_jwt_from_request(
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask_jwt_extended/view_decorators.py", line 310, in _decode_jwt_from_request
+    locations = config.token_location
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask_jwt_extended/config.py", line 44, in token_location
+    locations = current_app.config["JWT_TOKEN_LOCATION"]
+KeyError: 'JWT_TOKEN_LOCATION'
+2026-06-11 15:16:17,872 INFO werkzeug : 127.0.0.1 - - [11/Jun/2026 15:16:17] "[35m[1mPOST /api/v1/applications/save HTTP/1.1[0m" 500 -
+2026-06-11 15:18:14,807 ERROR app : Unhandled exception: 'JWT_TOKEN_LOCATION'
+Traceback (most recent call last):
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask_jwt_extended/view_decorators.py", line 167, in decorator
+    verify_jwt_in_request(
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask_jwt_extended/view_decorators.py", line 94, in verify_jwt_in_request
+    jwt_data, jwt_header, jwt_location = _decode_jwt_from_request(
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask_jwt_extended/view_decorators.py", line 310, in _decode_jwt_from_request
+    locations = config.token_location
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask_jwt_extended/config.py", line 44, in token_location
+    locations = current_app.config["JWT_TOKEN_LOCATION"]
+KeyError: 'JWT_TOKEN_LOCATION'
+2026-06-11 15:18:14,814 INFO werkzeug : 127.0.0.1 - - [11/Jun/2026 15:18:14] "[35m[1mPOST /api/v1/applications/save HTTP/1.1[0m" 500 -
+2026-06-11 15:18:22,028 ERROR app : Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-06-11 15:18:22,038 INFO werkzeug : 127.0.0.1 - - [11/Jun/2026 15:18:22] "[35m[1mPOST /api/v1/applications/save/ HTTP/1.1[0m" 500 -
+2026-06-11 15:22:37,151 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5003
+2026-06-11 15:22:37,151 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-06-11 15:22:37,152 INFO werkzeug :  * Restarting with stat
+2026-06-11 15:22:37,412 WARNING werkzeug :  * Debugger is active!
+2026-06-11 15:22:37,422 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-06-11 15:22:42,921 ERROR app : Unhandled exception: 'JWT_TOKEN_LOCATION'
+Traceback (most recent call last):
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask_jwt_extended/view_decorators.py", line 167, in decorator
+    verify_jwt_in_request(
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask_jwt_extended/view_decorators.py", line 94, in verify_jwt_in_request
+    jwt_data, jwt_header, jwt_location = _decode_jwt_from_request(
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask_jwt_extended/view_decorators.py", line 310, in _decode_jwt_from_request
+    locations = config.token_location
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask_jwt_extended/config.py", line 44, in token_location
+    locations = current_app.config["JWT_TOKEN_LOCATION"]
+KeyError: 'JWT_TOKEN_LOCATION'
+2026-06-11 15:22:42,932 INFO werkzeug : 127.0.0.1 - - [11/Jun/2026 15:22:42] "[35m[1mPOST /api/v1/applications/save HTTP/1.1[0m" 500 -
+2026-06-11 15:23:17,291 ERROR app : Unhandled exception: 'JWT_TOKEN_LOCATION'
+Traceback (most recent call last):
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask_jwt_extended/view_decorators.py", line 167, in decorator
+    verify_jwt_in_request(
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask_jwt_extended/view_decorators.py", line 94, in verify_jwt_in_request
+    jwt_data, jwt_header, jwt_location = _decode_jwt_from_request(
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask_jwt_extended/view_decorators.py", line 310, in _decode_jwt_from_request
+    locations = config.token_location
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask_jwt_extended/config.py", line 44, in token_location
+    locations = current_app.config["JWT_TOKEN_LOCATION"]
+KeyError: 'JWT_TOKEN_LOCATION'
+2026-06-11 15:23:17,293 INFO werkzeug : 127.0.0.1 - - [11/Jun/2026 15:23:17] "[35m[1mPOST /api/v1/applications/save HTTP/1.1[0m" 500 -
+2026-06-11 15:26:54,716 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/application-service/app/extensions.py', reloading
+2026-06-11 15:26:54,821 INFO werkzeug :  * Restarting with stat
+2026-06-11 15:26:55,396 WARNING werkzeug :  * Debugger is active!
+2026-06-11 15:26:55,402 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-06-11 15:27:28,080 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/application-service/app/__init__.py', reloading
+2026-06-11 15:27:28,166 INFO werkzeug :  * Restarting with stat
+2026-06-11 15:27:28,540 WARNING werkzeug :  * Debugger is active!
+2026-06-11 15:27:28,546 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-06-11 15:28:00,246 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/application-service/app/__init__.py', reloading
+2026-06-11 15:28:00,330 INFO werkzeug :  * Restarting with stat
+2026-06-11 15:28:00,705 WARNING werkzeug :  * Debugger is active!
+2026-06-11 15:28:00,713 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-06-11 15:29:44,859 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/application-service/app/config.py', reloading
+2026-06-11 15:29:44,984 INFO werkzeug :  * Restarting with stat
+2026-06-11 15:29:45,413 WARNING werkzeug :  * Debugger is active!
+2026-06-11 15:29:45,420 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-06-11 15:30:50,766 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/application-service/app/config.py', reloading
+2026-06-11 15:30:50,866 INFO werkzeug :  * Restarting with stat
+2026-06-11 15:30:51,277 WARNING werkzeug :  * Debugger is active!
+2026-06-11 15:30:51,285 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-06-11 15:31:07,237 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5003
+2026-06-11 15:31:07,237 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-06-11 15:31:07,238 INFO werkzeug :  * Restarting with stat
+2026-06-11 15:31:07,522 WARNING werkzeug :  * Debugger is active!
+2026-06-11 15:31:07,528 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-06-11 15:31:28,065 INFO werkzeug : 127.0.0.1 - - [11/Jun/2026 15:31:28] "[31m[1mPOST /api/v1/applications/save HTTP/1.1[0m" 401 -
+2026-06-11 15:34:30,386 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5003
+2026-06-11 15:34:30,386 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-06-11 15:34:30,386 INFO werkzeug :  * Restarting with stat
+2026-06-11 15:34:30,654 WARNING werkzeug :  * Debugger is active!
+2026-06-11 15:34:30,664 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-06-11 15:34:39,792 ERROR app : Unhandled exception: local variable 'job_code' referenced before assignment
+Traceback (most recent call last):
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask_jwt_extended/view_decorators.py", line 170, in decorator
+    return current_app.ensure_sync(fn)(*args, **kwargs)
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/application-service/app/blueprints/applications/routes.py", line 19, in save_job
+    job_code = data.get(job_code)
+UnboundLocalError: local variable 'job_code' referenced before assignment
+2026-06-11 15:34:39,804 INFO werkzeug : 127.0.0.1 - - [11/Jun/2026 15:34:39] "[35m[1mPOST /api/v1/applications/save HTTP/1.1[0m" 500 -
+2026-06-11 15:36:36,163 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/application-service/app/blueprints/applications/routes.py', reloading
+2026-06-11 15:36:36,264 INFO werkzeug :  * Restarting with stat
+2026-06-11 15:36:36,682 WARNING werkzeug :  * Debugger is active!
+2026-06-11 15:36:36,690 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-06-11 15:36:55,028 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5003
+2026-06-11 15:36:55,028 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-06-11 15:36:55,029 INFO werkzeug :  * Restarting with stat
+2026-06-11 15:36:55,289 WARNING werkzeug :  * Debugger is active!
+2026-06-11 15:36:55,295 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-06-11 15:36:59,200 INFO werkzeug : 127.0.0.1 - - [11/Jun/2026 15:36:59] "[35m[1mPOST /api/v1/applications/save HTTP/1.1[0m" 201 -
+2026-06-11 16:16:17,463 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/application-service/app/blueprints/applications/routes.py', reloading
+2026-06-11 16:16:17,592 INFO werkzeug :  * Restarting with stat
+2026-06-11 16:18:28,810 INFO werkzeug :  * Restarting with stat
+2026-06-11 16:18:29,238 WARNING werkzeug :  * Debugger is active!
+2026-06-11 16:18:29,245 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-06-11 16:20:30,861 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/application-service/app/blueprints/applications/service.py', reloading
+2026-06-11 16:20:30,944 INFO werkzeug :  * Restarting with stat
+2026-06-11 16:20:31,368 WARNING werkzeug :  * Debugger is active!
+2026-06-11 16:20:31,378 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-06-11 16:21:18,419 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/application-service/app/blueprints/applications/service.py', reloading
+2026-06-11 16:21:18,502 INFO werkzeug :  * Restarting with stat
+2026-06-11 16:21:18,879 WARNING werkzeug :  * Debugger is active!
+2026-06-11 16:21:18,886 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-06-11 16:34:07,074 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/application-service/app/blueprints/applications/service.py', reloading
+2026-06-11 16:34:07,154 INFO werkzeug :  * Restarting with stat
+2026-06-11 16:34:07,590 WARNING werkzeug :  * Debugger is active!
+2026-06-11 16:34:07,598 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-06-11 16:34:44,385 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/application-service/app/blueprints/applications/service.py', reloading
+2026-06-11 16:34:44,513 INFO werkzeug :  * Restarting with stat
+2026-06-11 16:34:44,930 WARNING werkzeug :  * Debugger is active!
+2026-06-11 16:34:44,936 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-06-11 16:42:54,263 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/application-service/app/blueprints/applications/routes.py', reloading
+2026-06-11 16:42:54,357 INFO werkzeug :  * Restarting with stat
+2026-06-11 16:42:54,793 WARNING werkzeug :  * Debugger is active!
+2026-06-11 16:42:54,807 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-06-11 16:47:30,607 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/application-service/app/blueprints/applications/service.py', reloading
+2026-06-11 16:47:30,696 INFO werkzeug :  * Restarting with stat
+2026-06-11 16:47:31,138 WARNING werkzeug :  * Debugger is active!
+2026-06-11 16:47:31,146 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-06-11 16:47:39,344 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/application-service/app/blueprints/applications/routes.py', reloading
+2026-06-11 16:47:39,452 INFO werkzeug :  * Restarting with stat
+2026-06-11 16:48:21,726 INFO werkzeug :  * Restarting with stat
+2026-06-11 16:48:22,124 WARNING werkzeug :  * Debugger is active!
+2026-06-11 16:48:22,133 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-06-11 16:59:35,159 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/application-service/app/blueprints/applications/service.py', reloading
+2026-06-11 16:59:35,254 INFO werkzeug :  * Restarting with stat
+2026-06-11 16:59:35,695 WARNING werkzeug :  * Debugger is active!
+2026-06-11 16:59:35,704 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-06-11 17:00:51,320 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/application-service/app/blueprints/applications/routes.py', reloading
+2026-06-11 17:00:51,428 INFO werkzeug :  * Restarting with stat
+2026-06-11 17:00:51,873 WARNING werkzeug :  * Debugger is active!
+2026-06-11 17:00:51,881 INFO werkzeug :  * Debugger PIN: 541-207-809
+2026-06-11 17:01:06,178 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/application-service/app/blueprints/applications/routes.py', reloading
+2026-06-11 17:01:06,251 INFO werkzeug :  * Restarting with stat
+2026-06-11 17:01:06,617 WARNING werkzeug :  * Debugger is active!
+2026-06-11 17:01:06,627 INFO werkzeug :  * Debugger PIN: 541-207-809
+2026-06-11 17:04:38,128 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/application-service/app/blueprints/applications/service.py', reloading
+2026-06-11 17:04:38,225 INFO werkzeug :  * Restarting with stat
+2026-06-11 17:04:38,652 WARNING werkzeug :  * Debugger is active!
+2026-06-11 17:04:38,661 INFO werkzeug :  * Debugger PIN: 541-207-809
+2026-06-11 17:22:49,982 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/application-service/app/blueprints/applications/routes.py', reloading
+2026-06-11 17:22:50,070 INFO werkzeug :  * Restarting with stat
+2026-06-11 17:23:01,818 INFO werkzeug :  * Restarting with stat
+2026-06-11 17:23:16,562 INFO werkzeug :  * Restarting with stat
+2026-06-11 17:24:03,003 INFO werkzeug :  * Restarting with stat
+2026-06-11 17:24:03,420 WARNING werkzeug :  * Debugger is active!
+2026-06-11 17:24:03,427 INFO werkzeug :  * Debugger PIN: 541-207-809
+2026-06-11 17:24:26,919 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/application-service/app/blueprints/applications/routes.py', reloading
+2026-06-11 17:24:27,005 INFO werkzeug :  * Restarting with stat
+2026-06-11 17:24:27,378 WARNING werkzeug :  * Debugger is active!
+2026-06-11 17:24:27,384 INFO werkzeug :  * Debugger PIN: 541-207-809
+2026-06-11 17:24:32,502 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/application-service/app/blueprints/applications/service.py', reloading
+2026-06-11 17:24:32,585 INFO werkzeug :  * Restarting with stat
+2026-06-11 17:24:32,936 WARNING werkzeug :  * Debugger is active!
+2026-06-11 17:24:32,944 INFO werkzeug :  * Debugger PIN: 541-207-809
