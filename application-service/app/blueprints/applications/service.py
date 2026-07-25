@@ -1,5 +1,6 @@
 from app.models import Application
 from app.extensions import db
+from app.clients.job_service import get_job_details
 
 def save_application(user_id, job_code):
         
@@ -59,7 +60,20 @@ def get_applications_service(user_id, status=None):
         "data" : [app.to_dict() for app in applications]
     },200
 
-def apply_job(user_id, job_code):
+def apply_job_service(user_id, job_code,token):
+
+#call to job-service to check if the job is open or closed. If it is closed, user should not apply
+    job = get_job_details(job_code,token)
+    if not job:
+        return {
+            "message": "Job not found"
+        },404
+
+
+    if job["status"] == "CLOSED":
+        return {
+            "message": "Cannot apply to closed job"
+        },400
     
     existing = Application.query.filter_by(
         user_id=user_id,
@@ -90,3 +104,16 @@ def apply_job(user_id, job_code):
         "message": "Job applied successfully",
         "data": application.to_dict()
     }, 201
+
+def get_application_status_service(user_id):
+
+    applications = Application.query.filter_by(user_id = user_id).all()
+    status_map ={}
+
+    for application in applications:
+        status_map[application.job_code] = application.status
+
+    return{
+        "mesaage": "Applications statuses fetched successfully",
+        "data": status_map
+    },200

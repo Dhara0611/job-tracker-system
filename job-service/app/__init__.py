@@ -1,6 +1,6 @@
 import logging
 from flask import Flask, jsonify
-from app.extensions import db, migrate
+from app.extensions import db, migrate,jwt
 from app.config import Config
 import app.models
 from app.blueprints.jobs.routes import jobs_bp
@@ -17,6 +17,9 @@ def create_app():
     # initialize database object
     db.init_app(app)
     migrate.init_app(app, db)
+
+    #configure app with jwt
+    jwt.init_app(app)
 
     # blueprint registration
     app.register_blueprint(jobs_bp, url_prefix="/api/v1/jobs")

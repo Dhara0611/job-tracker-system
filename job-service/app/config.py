@@ -8,3 +8,4 @@ class Config:
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
     DEBUG = os.getenv("FLASK_DEBUG", "False") == "True"
+    SECRET_KEY = os.getenv("JWT_SECRET_KEY")
