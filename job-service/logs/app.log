@@ -27,3 +27,358 @@
 2026-06-11 15:07:10,270 INFO app.blueprints.jobs.service : Searching jobs
 2026-06-11 15:07:10,299 INFO app.blueprints.jobs.service : Search returned 2 jobs
 2026-06-11 15:07:10,299 INFO werkzeug : 127.0.0.1 - - [11/Jun/2026 15:07:10] "GET /api/v1/jobs/ HTTP/1.1" 200 -
+2026-07-24 15:36:36,383 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2026-07-24 15:36:36,384 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-07-24 15:36:36,384 INFO werkzeug :  * Restarting with stat
+2026-07-24 15:36:36,697 WARNING werkzeug :  * Debugger is active!
+2026-07-24 15:36:36,704 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-24 15:37:55,745 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2026-07-24 15:37:55,746 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-07-24 15:37:55,746 INFO werkzeug :  * Restarting with stat
+2026-07-24 15:37:56,063 WARNING werkzeug :  * Debugger is active!
+2026-07-24 15:37:56,071 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-24 15:38:31,976 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 15:38:31] "[32mPOST /api/v1/jobs HTTP/1.1[0m" 308 -
+2026-07-24 15:38:31,980 ERROR app : Unhandled exception: 'JWT_TOKEN_LOCATION'
+Traceback (most recent call last):
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask_jwt_extended/view_decorators.py", line 167, in decorator
+    verify_jwt_in_request(
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask_jwt_extended/view_decorators.py", line 94, in verify_jwt_in_request
+    jwt_data, jwt_header, jwt_location = _decode_jwt_from_request(
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask_jwt_extended/view_decorators.py", line 310, in _decode_jwt_from_request
+    locations = config.token_location
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask_jwt_extended/config.py", line 44, in token_location
+    locations = current_app.config["JWT_TOKEN_LOCATION"]
+KeyError: 'JWT_TOKEN_LOCATION'
+2026-07-24 15:38:31,990 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 15:38:31] "[35m[1mPOST /api/v1/jobs/ HTTP/1.1[0m" 500 -
+2026-07-24 15:43:50,744 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/extensions.py', reloading
+2026-07-24 15:43:50,838 INFO werkzeug :  * Restarting with stat
+2026-07-24 15:44:12,789 INFO werkzeug :  * Restarting with stat
+2026-07-24 15:44:13,239 WARNING werkzeug :  * Debugger is active!
+2026-07-24 15:44:13,245 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-24 15:44:52,115 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/config.py', reloading
+2026-07-24 15:44:52,207 INFO werkzeug :  * Restarting with stat
+2026-07-24 15:44:52,646 WARNING werkzeug :  * Debugger is active!
+2026-07-24 15:44:52,652 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-24 15:45:56,119 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/__init__.py', reloading
+2026-07-24 15:45:56,234 INFO werkzeug :  * Restarting with stat
+2026-07-24 15:45:56,925 WARNING werkzeug :  * Debugger is active!
+2026-07-24 15:45:56,934 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-24 15:46:01,047 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/__init__.py', reloading
+2026-07-24 15:46:01,136 INFO werkzeug :  * Restarting with stat
+2026-07-24 15:46:01,459 WARNING werkzeug :  * Debugger is active!
+2026-07-24 15:46:01,466 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-24 15:46:29,060 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/__init__.py', reloading
+2026-07-24 15:46:29,162 INFO werkzeug :  * Restarting with stat
+2026-07-24 15:46:29,596 WARNING werkzeug :  * Debugger is active!
+2026-07-24 15:46:29,603 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-24 15:46:31,674 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/__init__.py', reloading
+2026-07-24 15:46:31,753 INFO werkzeug :  * Restarting with stat
+2026-07-24 15:46:32,060 WARNING werkzeug :  * Debugger is active!
+2026-07-24 15:46:32,065 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-24 15:47:12,979 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/routes.py', reloading
+2026-07-24 15:47:13,096 INFO werkzeug :  * Restarting with stat
+2026-07-24 15:47:13,556 WARNING werkzeug :  * Debugger is active!
+2026-07-24 15:47:13,564 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-24 15:47:24,200 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2026-07-24 15:47:24,201 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-07-24 15:47:24,201 INFO werkzeug :  * Restarting with stat
+2026-07-24 15:47:24,517 WARNING werkzeug :  * Debugger is active!
+2026-07-24 15:47:24,527 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-24 15:47:30,929 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 15:47:30] "[32mPOST /api/v1/jobs HTTP/1.1[0m" 308 -
+2026-07-24 15:47:30,940 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 15:47:30] "[31m[1mPOST /api/v1/jobs/ HTTP/1.1[0m" 401 -
+2026-07-24 15:47:42,730 ERROR app : Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-07-24 15:47:42,740 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 15:47:42] "[35m[1mPOST /auth/login HTTP/1.1[0m" 500 -
+2026-07-24 15:49:17,227 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2026-07-24 15:49:17,227 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-07-24 15:49:17,228 INFO werkzeug :  * Restarting with stat
+2026-07-24 15:49:17,532 WARNING werkzeug :  * Debugger is active!
+2026-07-24 15:49:17,539 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-24 15:49:21,414 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 15:49:21] "[32mPOST /api/v1/jobs HTTP/1.1[0m" 308 -
+2026-07-24 15:49:21,423 INFO app.blueprints.jobs.routes : Creating new job: Software Engineer at Acme Corp
+2026-07-24 15:49:21,423 INFO app.blueprints.jobs.service : Creating job for company=Acme Corp title=Software Engineer
+2026-07-24 15:49:21,449 INFO app.blueprints.jobs.service : Job created: acme-corp-03
+2026-07-24 15:49:21,449 INFO app.blueprints.jobs.routes : Created job acme-corp-03
+2026-07-24 15:49:21,450 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 15:49:21] "[35m[1mPOST /api/v1/jobs/ HTTP/1.1[0m" 201 -
+2026-07-24 15:49:47,421 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 15:49:47] "[32mPOST /api/v1/jobs HTTP/1.1[0m" 308 -
+2026-07-24 15:49:47,428 INFO app.blueprints.jobs.routes : Creating new job: QA Engineer at Google
+2026-07-24 15:49:47,429 INFO app.blueprints.jobs.service : Creating job for company=Google title=QA Engineer
+2026-07-24 15:49:47,440 INFO app.blueprints.jobs.service : Job created: google-01
+2026-07-24 15:49:47,441 INFO app.blueprints.jobs.routes : Created job google-01
+2026-07-24 15:49:47,441 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 15:49:47] "[35m[1mPOST /api/v1/jobs/ HTTP/1.1[0m" 201 -
+2026-07-24 15:50:02,931 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 15:50:02] "[32mPOST /api/v1/jobs HTTP/1.1[0m" 308 -
+2026-07-24 15:50:02,933 INFO app.blueprints.jobs.routes : Creating new job: DevOps Engineer at Logic Monitor
+2026-07-24 15:50:02,933 INFO app.blueprints.jobs.service : Creating job for company=Logic Monitor title=DevOps Engineer
+2026-07-24 15:50:02,935 INFO app.blueprints.jobs.service : Job created: logic-monitor-01
+2026-07-24 15:50:02,936 INFO app.blueprints.jobs.routes : Created job logic-monitor-01
+2026-07-24 15:50:02,936 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 15:50:02] "[35m[1mPOST /api/v1/jobs/ HTTP/1.1[0m" 201 -
+2026-07-24 15:50:19,292 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 15:50:19] "[32mPOST /api/v1/jobs HTTP/1.1[0m" 308 -
+2026-07-24 15:50:19,296 INFO app.blueprints.jobs.routes : Creating new job: Cloud Engineer at Paypal
+2026-07-24 15:50:19,296 INFO app.blueprints.jobs.service : Creating job for company=Paypal title=Cloud Engineer
+2026-07-24 15:50:19,310 INFO app.blueprints.jobs.service : Job created: paypal-01
+2026-07-24 15:50:19,312 INFO app.blueprints.jobs.routes : Created job paypal-01
+2026-07-24 15:50:19,313 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 15:50:19] "[35m[1mPOST /api/v1/jobs/ HTTP/1.1[0m" 201 -
+2026-07-24 15:50:37,723 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 15:50:37] "[32mPOST /api/v1/jobs HTTP/1.1[0m" 308 -
+2026-07-24 15:50:37,727 INFO app.blueprints.jobs.routes : Creating new job: Mainframe Engineer at IBM
+2026-07-24 15:50:37,727 INFO app.blueprints.jobs.service : Creating job for company=IBM title=Mainframe Engineer
+2026-07-24 15:50:37,731 INFO app.blueprints.jobs.service : Job created: ibm-01
+2026-07-24 15:50:37,731 INFO app.blueprints.jobs.routes : Created job ibm-01
+2026-07-24 15:50:37,731 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 15:50:37] "[35m[1mPOST /api/v1/jobs/ HTTP/1.1[0m" 201 -
+2026-07-24 15:56:40,823 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2026-07-24 15:56:40,823 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-07-24 15:56:40,823 INFO werkzeug :  * Restarting with stat
+2026-07-24 15:56:41,125 WARNING werkzeug :  * Debugger is active!
+2026-07-24 15:56:41,133 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-24 15:57:00,706 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 15:57:00] "[32mGET /api/v1/jobs HTTP/1.1[0m" 308 -
+2026-07-24 15:57:00,757 ERROR app.clients.application_client : [APPLICATION_SERVICE_ERROR] error=HTTPConnectionPool(host='localhost', port=5002): Max retries exceeded with url: /applications/user-status (Caused by NewConnectionError("HTTPConnection(host='localhost', port=5002): Failed to establish a new connection: [Errno 61] Connection refused"))
+Traceback (most recent call last):
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/connection.py", line 500, in request
+    self.endheaders()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1252, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1012, in _send_output
+    self.send(msg)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 952, in send
+    self.connect()
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/connection.py", line 331, in connect
+    self.sock = self._new_conn()
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/connection.py", line 219, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: HTTPConnection(host='localhost', port=5002): Failed to establish a new connection: [Errno 61] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/util/retry.py", line 535, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=5002): Max retries exceeded with url: /applications/user-status (Caused by NewConnectionError("HTTPConnection(host='localhost', port=5002): Failed to establish a new connection: [Errno 61] Connection refused"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/clients/application_client.py", line 10, in get_application_status
+    response = requests.get(
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/requests/adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=5002): Max retries exceeded with url: /applications/user-status (Caused by NewConnectionError("HTTPConnection(host='localhost', port=5002): Failed to establish a new connection: [Errno 61] Connection refused"))
+2026-07-24 15:57:00,776 INFO app.blueprints.jobs.routes : Fetching job list
+2026-07-24 15:57:00,777 INFO app.blueprints.jobs.service : Searching jobs
+2026-07-24 15:57:00,789 INFO app.blueprints.jobs.service : Search returned 7 jobs
+2026-07-24 15:57:00,790 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 15:57:00] "GET /api/v1/jobs/ HTTP/1.1" 200 -
+2026-07-24 16:00:51,828 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 16:00:51] "GET /api/v1/jobs/paypal-01 HTTP/1.1" 200 -
+2026-07-24 16:58:55,234 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5003
+2026-07-24 16:58:55,234 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-07-24 16:58:55,235 INFO werkzeug :  * Restarting with stat
+2026-07-24 16:58:55,534 WARNING werkzeug :  * Debugger is active!
+2026-07-24 16:58:55,541 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-24 16:59:03,702 ERROR app : Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-07-24 16:59:03,719 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 16:59:03] "[35m[1mPOST /api/v1/applications/save HTTP/1.1[0m" 500 -
+2026-07-24 17:12:59,877 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2026-07-24 17:12:59,877 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-07-24 17:12:59,877 INFO werkzeug :  * Restarting with stat
+2026-07-24 17:13:00,186 WARNING werkzeug :  * Debugger is active!
+2026-07-24 17:13:00,197 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-24 17:13:07,684 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 17:13:07] "[31m[1mGET /api/v1/jobs/ibm-01 HTTP/1.1[0m" 401 -
+2026-07-24 17:14:56,937 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2026-07-24 17:14:56,937 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-07-24 17:14:56,938 INFO werkzeug :  * Restarting with stat
+2026-07-24 17:14:57,241 WARNING werkzeug :  * Debugger is active!
+2026-07-24 17:14:57,247 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-24 17:15:04,851 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 17:15:04] "[31m[1mGET /api/v1/jobs/ibm-01 HTTP/1.1[0m" 401 -
+2026-07-24 17:15:07,215 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 17:15:07] "[31m[1mGET /api/v1/jobs/ibm-01 HTTP/1.1[0m" 401 -
+2026-07-24 17:15:18,908 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 17:15:18] "GET /api/v1/jobs/ibm-01 HTTP/1.1" 200 -
+2026-07-24 17:49:55,202 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2026-07-24 17:49:55,202 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-07-24 17:49:55,202 INFO werkzeug :  * Restarting with stat
+2026-07-24 17:49:55,501 WARNING werkzeug :  * Debugger is active!
+2026-07-24 17:49:55,510 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-24 17:50:01,754 ERROR app : Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-07-24 17:50:01,761 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 17:50:01] "[35m[1mGET /jobs/ibm-01 HTTP/1.1[0m" 500 -
+2026-07-24 17:54:00,796 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 17:54:00] "[32mGET /api/v1/jobs HTTP/1.1[0m" 308 -
+2026-07-24 17:54:00,854 ERROR app.clients.application_client : [APPLICATION_SERVICE_ERROR] error=500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5002/applications/user-status
+Traceback (most recent call last):
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/clients/application_client.py", line 18, in get_application_status
+    response.raise_for_status()
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: http://localhost:5002/applications/user-status
+2026-07-24 17:54:00,860 INFO app.blueprints.jobs.routes : Fetching job list
+2026-07-24 17:54:00,860 INFO app.blueprints.jobs.service : Searching jobs
+2026-07-24 17:54:00,886 INFO app.blueprints.jobs.service : Search returned 7 jobs
+2026-07-24 17:54:00,887 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 17:54:00] "GET /api/v1/jobs/ HTTP/1.1" 200 -
+2026-07-24 17:55:32,919 ERROR app : Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-07-24 17:55:32,925 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 17:55:32] "[35m[1mGET /jobs/paypal-01 HTTP/1.1[0m" 500 -
+2026-07-24 17:58:57,314 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2026-07-24 17:58:57,314 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-07-24 17:58:57,315 INFO werkzeug :  * Restarting with stat
+2026-07-24 17:58:57,611 WARNING werkzeug :  * Debugger is active!
+2026-07-24 17:58:57,617 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-24 18:00:22,925 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 18:00:22] "GET /api/v1/jobs/paypal-01 HTTP/1.1" 200 -
+2026-07-24 18:05:19,792 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/clients/application_client.py', reloading
+2026-07-24 18:05:19,860 INFO werkzeug :  * Restarting with stat
+2026-07-24 18:05:20,317 WARNING werkzeug :  * Debugger is active!
+2026-07-24 18:05:20,322 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-24 18:07:03,204 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 18:07:03] "[32mGET /api/v1/jobs HTTP/1.1[0m" 308 -
+2026-07-24 18:07:03,215 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 18:07:03] "[31m[1mGET /api/v1/jobs/ HTTP/1.1[0m" 401 -
+2026-07-24 18:07:29,522 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 18:07:29] "[32mGET /api/v1/jobs HTTP/1.1[0m" 308 -
+2026-07-24 18:07:29,616 INFO app.blueprints.jobs.routes : Fetching job list
+2026-07-24 18:07:29,617 INFO app.blueprints.jobs.service : Searching jobs
+2026-07-24 18:07:29,640 INFO app.blueprints.jobs.service : Search returned 7 jobs
+2026-07-24 18:07:29,640 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 18:07:29] "GET /api/v1/jobs/ HTTP/1.1" 200 -
+2026-07-24 18:44:54,781 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2026-07-24 18:44:54,782 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-07-24 18:44:54,782 INFO werkzeug :  * Restarting with stat
+2026-07-24 18:44:55,082 WARNING werkzeug :  * Debugger is active!
+2026-07-24 18:44:55,089 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-24 18:45:05,358 ERROR app : Unhandled exception: 405 Method Not Allowed: The method is not allowed for the requested URL.
+Traceback (most recent call last):
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/werkzeug/routing/map.py", line 624, in match
+    raise MethodNotAllowed(valid_methods=list(e.have_match_for)) from None
+werkzeug.exceptions.MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL.
+2026-07-24 18:45:05,385 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 18:45:05] "[35m[1mPOST /api/v1/jobs/google-01/close HTTP/1.1[0m" 500 -
+2026-07-24 18:45:29,495 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 18:45:29] "[31m[1mPATCH /api/v1/jobs/google-01/close HTTP/1.1[0m" 401 -
+2026-07-24 18:45:39,395 ERROR app : Unhandled exception: 'Job' object has no attribute 'jobcode'
+Traceback (most recent call last):
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask_jwt_extended/view_decorators.py", line 170, in decorator
+    return current_app.ensure_sync(fn)(*args, **kwargs)
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/routes.py", line 155, in close_job
+    "job code" : job.jobcode,
+AttributeError: 'Job' object has no attribute 'jobcode'
+2026-07-24 18:45:39,399 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 18:45:39] "[35m[1mPATCH /api/v1/jobs/google-01/close HTTP/1.1[0m" 500 -
+2026-07-24 18:45:45,613 ERROR app : Unhandled exception: 'Job' object has no attribute 'jobcode'
+Traceback (most recent call last):
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask_jwt_extended/view_decorators.py", line 170, in decorator
+    return current_app.ensure_sync(fn)(*args, **kwargs)
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/routes.py", line 155, in close_job
+    "job code" : job.jobcode,
+AttributeError: 'Job' object has no attribute 'jobcode'
+2026-07-24 18:45:45,615 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 18:45:45] "[35m[1mPATCH /api/v1/jobs/google-01/close HTTP/1.1[0m" 500 -
+2026-07-24 18:47:36,734 ERROR app : Unhandled exception: 'Job' object has no attribute 'jobcode'
+Traceback (most recent call last):
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask_jwt_extended/view_decorators.py", line 170, in decorator
+    return current_app.ensure_sync(fn)(*args, **kwargs)
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/routes.py", line 155, in close_job
+    "job code" : job.jobcode,
+AttributeError: 'Job' object has no attribute 'jobcode'
+2026-07-24 18:47:36,735 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 18:47:36] "[35m[1mPATCH /api/v1/jobs/google-01/close HTTP/1.1[0m" 500 -
+2026-07-24 18:48:49,315 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/routes.py', reloading
+2026-07-24 18:48:49,489 INFO werkzeug :  * Restarting with stat
+2026-07-24 18:48:50,534 WARNING werkzeug :  * Debugger is active!
+2026-07-24 18:48:50,542 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-24 18:48:57,594 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 18:48:57] "PATCH /api/v1/jobs/google-01/close HTTP/1.1" 200 -
+2026-07-24 18:55:42,448 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2026-07-24 18:55:42,448 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-07-24 18:55:42,449 INFO werkzeug :  * Restarting with stat
+2026-07-24 18:55:42,755 WARNING werkzeug :  * Debugger is active!
+2026-07-24 18:55:42,763 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-24 18:56:36,630 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 18:56:36] "GET /api/v1/jobs/google-01 HTTP/1.1" 200 -

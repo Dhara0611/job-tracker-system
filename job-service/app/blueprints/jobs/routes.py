@@ -6,6 +6,7 @@ from app.models import Job
 from app.extensions import db
 from app.validators.job_validator import JobSchema
 from app.validators.decorators import validate_schema
+from app.clients.application_client import get_application_status
 
 logger = logging.getLogger(__name__)
 
@@ -20,7 +21,16 @@ jobs_bp = Blueprint("jobs", __name__)
 #     ), 200
 
 @jobs_bp.route("/")
+@jwt_required()
 def get_jobs():
+
+    user_id = get_jwt_identity()
+
+#process to call application-service to get status of jobs that user_id has interacted with
+    token = request.headers.get("Authorization")
+    application_status_response = get_application_status(token)
+    application_status_map = application_status_response.get("data",{})
+
     logger.info("Fetching job list")
 
     # get the query parameters 
@@ -45,7 +55,9 @@ def get_jobs():
             "company" : job.company,
             "location" : job.location,
         #adding status after adding it to the model
-            "status": job.status
+            "status": job.status,
+        #get the status of the jobs that user has interacted with before from the application service
+            "application_status": application_status_map.get(job.job_code)
         }
         list_of_jobs.append(required_job_details)
 
@@ -68,11 +80,22 @@ def get_jobs():
 
 #endpoint to add a job
 @jobs_bp.route("/", methods=["POST"])
+@jwt_required()
 @validate_schema(JobSchema)
 def add_job(validated_data):
     logger.info("Creating new job: %s at %s", validated_data.get("title"), validated_data.get("company"))
+
+#check, only recruiter can create new job
+    claims = get_jwt()
+    role = claims.get("role")
+    if role != 'recruiter':
+        return jsonify({
+            "error": "Recruiter access required to create a job"
+        }),403
+    
     job = create_job(validated_data)
     logger.info("Created job %s", job.job_code)
+
     return jsonify(
         {
             "job_code": job.job_code,
@@ -84,7 +107,9 @@ def add_job(validated_data):
         }
     ), 201
 
+
 @jobs_bp.route("/<job_code>", methods=["GET"])
+@jwt_required()
 def get_job(job_code):
 
     job = get_job_by_code(job_code)
@@ -127,7 +152,7 @@ def close_job(job_code):
     db.session.commit()
     return jsonify({
         "message" : "Job closed successfully",
-        "job code" : job.jobcode,
+        "job code" : job.job_code,
         "status" : job.status
     }),200
 
