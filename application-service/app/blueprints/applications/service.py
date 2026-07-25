@@ -1,8 +1,10 @@
 from app.models import Application
 from app.extensions import db
 import logging
+from app.clients.job_service import get_job_details
 
 logger = logging.getLogger(__name__)
+
 
 def save_application(user_id, job_code):
 
@@ -130,71 +132,71 @@ def get_applications_service(user_id, status=None, page=1,limit=10):
         raise e
 
 
-def apply_job_service(user_id, job_code):
-    try:
-        logger.info(
-            "[APPLY_JOB_SERVICE_START] user_id=%s job_code=%s",
-            user_id,
-            job_code
-        )
-        existing = Application.query.filter_by(
-            user_id=user_id,
-            job_code=job_code
-        ).first()
+# def apply_job_service(user_id, job_code):
+#     try:
+#         logger.info(
+#             "[APPLY_JOB_SERVICE_START] user_id=%s job_code=%s",
+#             user_id,
+#             job_code
+#         )
+#         existing = Application.query.filter_by(
+#             user_id=user_id,
+#             job_code=job_code
+#         ).first()
 
-        # CASE 1: already exists → update status
-        if existing:
-            if existing.status == "SAVED":
-                existing.status == "APPLIED"
-                db.session.commit()
+#         # CASE 1: already exists → update status
+#         if existing:
+#             if existing.status == "SAVED":
+#                 existing.status == "APPLIED"
+#                 db.session.commit()
 
-                logger.info(
-                    "[APPLY_JOB_SERVICE_UPDATED] user_id=%s job_code=%s",
-                    user_id,
-                    job_code
-                )
-                return {
-                    "message": "Job marked as applied",
-                    "data": existing.to_dict()
-                }, 200
+#                 logger.info(
+#                     "[APPLY_JOB_SERVICE_UPDATED] user_id=%s job_code=%s",
+#                     user_id,
+#                     job_code
+#                 )
+#                 return {
+#                     "message": "Job marked as applied",
+#                     "data": existing.to_dict()
+#                 }, 200
         
-            return {
-                    "message": f" Application already in {existing.status} status ",
-                    "data": existing.to_dict()
-                }, 400
+#             return {
+#                     "message": f" Application already in {existing.status} status ",
+#                     "data": existing.to_dict()
+#                 }, 400
 
-        # CASE 2: not exists → create new record
+#         # CASE 2: not exists → create new record
 
-        application = Application(
-            user_id=user_id,
-            job_code=job_code,
-            status="APPLIED"
-        )
+#         application = Application(
+#             user_id=user_id,
+#             job_code=job_code,
+#             status="APPLIED"
+#         )
 
-        db.session.add(application)
-        db.session.commit()
+#         db.session.add(application)
+#         db.session.commit()
 
-        logger.info(
-                "[APPLY_JOB_SERVICE_SUCCESS] user_id=%s job_code=%s",
-                user_id,
-                job_code
-                )
+#         logger.info(
+#                 "[APPLY_JOB_SERVICE_SUCCESS] user_id=%s job_code=%s",
+#                 user_id,
+#                 job_code
+#                 )
 
-        return {
-            "message": "Job applied successfully",
-            "data": application.to_dict()
-        }, 201
+#         return {
+#             "message": "Job applied successfully",
+#             "data": application.to_dict()
+#         }, 201
     
-    except Exception as e:
-        db.session.rollback()
+#     except Exception as e:
+#         db.session.rollback()
 
-        logger.exception(
-            "[APPLY_JOB_SERVICE_ERROR] user_id=%s job_code=%s error=%s",
-            user_id,
-            job_code,
-            str(e)
-        )
-        raise e
+#         logger.exception(
+#             "[APPLY_JOB_SERVICE_ERROR] user_id=%s job_code=%s error=%s",
+#             user_id,
+#             job_code,
+#             str(e)
+#         )
+#         raise e
 
 def update_application_status_service(user_id, job_code , status):
     try:
@@ -258,7 +260,7 @@ def update_application_status_service(user_id, job_code , status):
     
     except Exception as e:
 
-        db.session.rollback
+        db.session.rollback()
         logger.exception(
             "[UPDATE_APPLICATION_STATUS_ERROR] user_id=%s job_code=%s error=%s",
             user_id,
@@ -267,6 +269,67 @@ def update_application_status_service(user_id, job_code , status):
         )
         raise e
 
+def apply_job_service(user_id, job_code,token):
+
+#call to job-service to check if the job is open or closed. If it is closed, user should not apply
+    try:
+        logger.info(
+            "[APPLY_JOB_SERVICE_START] user_id=%s job_code=%s",
+            user_id,
+            job_code
+        )
+        job = get_job_details(job_code,token)
+        if not job:
+            return {
+                "message": "Job not found"
+            },404
+
+
+        if job["status"] == "CLOSED":
+            return {
+                "message": "Cannot apply to closed job"
+            },400
+        
+        existing = Application.query.filter_by(
+            user_id=user_id,
+            job_code=job_code
+        ).first()
+
+        # CASE 1: already exists → update status
+        if existing:
+            existing.status = "APPLIED"
+            db.session.commit()
+
+            return {
+                "message": "Job marked as applied",
+                "data": existing.to_dict()
+            }, 200
+
+        # CASE 2: not exists → create new record
+        application = Application(
+            user_id=user_id,
+            job_code=job_code,
+            status="APPLIED"
+        )
+
+        db.session.add(application)
+        db.session.commit()
+
+        return {
+            "message": "Job applied successfully",
+            "data": application.to_dict()
+        }, 201
+    
+    except Exception as e:
+            db.session.rollback()
+    
+            logger.exception(
+                "[APPLY_JOB_SERVICE_ERROR] user_id=%s job_code=%s error=%s",
+                user_id,
+                job_code,
+                str(e)
+            )
+            raise e
 def delete_application_service(user_id, job_code):
     try:
         logger.info(
@@ -320,7 +383,7 @@ def delete_application_service(user_id, job_code):
         }, 200
     
     except Exception as e:
-        db.session.rollback
+        db.session.rollback()
         logger.exception(
             "[DELETE_APPLICATION_ERROR] user_id=%s job_code=%s error=%s",
             user_id,
@@ -328,3 +391,17 @@ def delete_application_service(user_id, job_code):
             str(e)
         )
         raise e
+
+def get_application_status_service(user_id):
+
+    applications = Application.query.filter_by(user_id = user_id).all()
+    status_map ={}
+
+    for application in applications:
+        status_map[application.job_code] = application.status
+
+    return{
+        "mesaage": "Applications statuses fetched successfully",
+        "data": status_map
+    },200
+

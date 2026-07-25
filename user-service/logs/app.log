@@ -28,3 +28,96 @@
 2026-06-11 15:33:05,482 WARNING werkzeug :  * Debugger is active!
 2026-06-11 15:33:05,490 INFO werkzeug :  * Debugger PIN: 833-047-769
 2026-06-11 15:33:15,876 INFO werkzeug : 127.0.0.1 - - [11/Jun/2026 15:33:15] "POST /auth/login HTTP/1.1" 200 -
+2026-07-24 14:53:06,611 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-07-24 14:53:06,611 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-07-24 14:53:06,612 INFO werkzeug :  * Restarting with stat
+2026-07-24 14:53:06,873 WARNING werkzeug :  * Debugger is active!
+2026-07-24 14:53:06,885 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-24 14:57:55,245 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2026-07-24 14:57:55,245 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-07-24 14:57:55,246 INFO werkzeug :  * Restarting with stat
+2026-07-24 14:57:55,540 WARNING werkzeug :  * Debugger is active!
+2026-07-24 14:57:55,546 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-24 14:58:06,359 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 14:58:06] "[31m[1mPOST /auth/register HTTP/1.1[0m" 400 -
+2026-07-24 15:06:57,731 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 15:06:57] "[35m[1mPOST /auth/register HTTP/1.1[0m" 201 -
+2026-07-24 15:07:15,596 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 15:07:15] "[35m[1mPOST /auth/register HTTP/1.1[0m" 201 -
+2026-07-24 15:31:33,833 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2026-07-24 15:31:33,834 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-07-24 15:31:33,835 INFO werkzeug :  * Restarting with stat
+2026-07-24 15:31:34,277 WARNING werkzeug :  * Debugger is active!
+2026-07-24 15:31:34,289 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-24 15:31:37,624 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 15:31:37] "POST /auth/login HTTP/1.1" 200 -
+2026-07-24 15:47:59,739 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2026-07-24 15:47:59,739 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-07-24 15:47:59,740 INFO werkzeug :  * Restarting with stat
+2026-07-24 15:48:00,012 WARNING werkzeug :  * Debugger is active!
+2026-07-24 15:48:00,023 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-24 15:48:04,367 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 15:48:04] "POST /auth/login HTTP/1.1" 200 -
+2026-07-24 15:48:39,344 ERROR app : Unhandled exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2026-07-24 15:48:39,347 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 15:48:39] "[35m[1mPOST /api/v1/jobs HTTP/1.1[0m" 500 -
+2026-07-24 15:55:28,671 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2026-07-24 15:55:28,672 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-07-24 15:55:28,672 INFO werkzeug :  * Restarting with stat
+2026-07-24 15:55:28,941 WARNING werkzeug :  * Debugger is active!
+2026-07-24 15:55:28,948 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-24 15:55:34,344 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 15:55:34] "POST /auth/login HTTP/1.1" 200 -
+2026-07-24 16:57:51,838 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2026-07-24 16:57:51,838 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-07-24 16:57:51,839 INFO werkzeug :  * Restarting with stat
+2026-07-24 16:57:52,112 WARNING werkzeug :  * Debugger is active!
+2026-07-24 16:57:52,118 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-24 16:57:58,481 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 16:57:58] "POST /auth/login HTTP/1.1" 200 -
+2026-07-24 17:13:49,588 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2026-07-24 17:13:49,588 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-07-24 17:13:49,589 INFO werkzeug :  * Restarting with stat
+2026-07-24 17:13:49,898 WARNING werkzeug :  * Debugger is active!
+2026-07-24 17:13:49,908 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-24 17:13:53,737 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 17:13:53] "POST /auth/login HTTP/1.1" 200 -
+2026-07-24 17:40:21,648 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2026-07-24 17:40:21,649 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-07-24 17:40:21,649 INFO werkzeug :  * Restarting with stat
+2026-07-24 17:40:21,922 WARNING werkzeug :  * Debugger is active!
+2026-07-24 17:40:21,929 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-24 17:40:35,148 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 17:40:35] "POST /auth/login HTTP/1.1" 200 -
+2026-07-24 17:59:36,700 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-07-24 17:59:36,700 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-07-24 17:59:36,700 INFO werkzeug :  * Restarting with stat
+2026-07-24 17:59:36,985 WARNING werkzeug :  * Debugger is active!
+2026-07-24 17:59:36,991 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-24 17:59:46,938 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 17:59:46] "POST /auth/login HTTP/1.1" 200 -
+2026-07-24 18:01:45,711 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-07-24 18:01:45,712 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-07-24 18:01:45,712 INFO werkzeug :  * Restarting with stat
+2026-07-24 18:01:45,996 WARNING werkzeug :  * Debugger is active!
+2026-07-24 18:01:46,006 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-24 18:01:52,517 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 18:01:52] "GET /auth/profile HTTP/1.1" 200 -
+2026-07-24 18:40:30,088 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-07-24 18:40:30,089 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-07-24 18:40:30,089 INFO werkzeug :  * Restarting with stat
+2026-07-24 18:40:30,355 WARNING werkzeug :  * Debugger is active!
+2026-07-24 18:40:30,362 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-24 18:40:36,751 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 18:40:36] "POST /auth/login HTTP/1.1" 200 -
+2026-07-24 18:49:42,329 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-07-24 18:49:42,329 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-07-24 18:49:42,330 INFO werkzeug :  * Restarting with stat
+2026-07-24 18:49:42,601 WARNING werkzeug :  * Debugger is active!
+2026-07-24 18:49:42,607 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-24 18:54:31,711 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-07-24 18:54:31,711 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-07-24 18:54:31,712 INFO werkzeug :  * Restarting with stat
+2026-07-24 18:54:31,992 WARNING werkzeug :  * Debugger is active!
+2026-07-24 18:54:31,998 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-24 18:54:50,641 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 18:54:50] "POST /auth/login HTTP/1.1" 200 -

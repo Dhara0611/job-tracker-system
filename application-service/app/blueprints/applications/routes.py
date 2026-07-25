@@ -2,10 +2,10 @@ import logging
 from flask import Blueprint, jsonify, request
 from flask_jwt_extended import jwt_required, get_jwt_identity, get_jwt
 from app.models import Application
-from app.extensions import db
-from app.blueprints.applications.service import save_application,apply_job_service,get_applications_service, update_application_status_service, delete_application_service
+from app.blueprints.applications.service import save_application,apply_job_service,get_applications_service, update_application_status_service, delete_application_service,get_application_status_service
 from app.validators.decorators import validate_schema
 from app.validators.schemas import JobCodeSchema, UpdateStatusSchema
+
 
 logger = logging.getLogger(__name__)
 
@@ -93,12 +93,18 @@ def apply_job(validated_data):
 
     try:
         user_id = get_jwt_identity()
-
+        token = request.headers.get("Authorization")
         job_code = validated_data["job_code"]
+
+        if not job_code:
+            return jsonify({
+                "error": "job_code is required"
+            }),400
 
         logger.info("[APPLY_JOB_START] user_id=%s job_code=%s", user_id, job_code)
         
-        response, status_code = apply_job_service(user_id, job_code) 
+        response, status_code = apply_job_service(user_id, job_code,token)
+        
         logger.info(
             "[APPLY_JOB_SUCCESS] user_id=%s job_code=%s status_code=%s",
             user_id,
@@ -107,7 +113,6 @@ def apply_job(validated_data):
         )   
 
         return jsonify(response), status_code
-    
     except Exception as e:
         logger.exception(
             "[APPLY_JOB_ERROR] user_id=%s job_code=%s error=%s",
@@ -116,7 +121,6 @@ def apply_job(validated_data):
             str(e)
         )
         return jsonify({"error": "Internal server error"}), 500
-
 
 
 #this endpoint is only for recruiters. Recruiters can update the status of the application that is applied. 
@@ -158,14 +162,38 @@ def update_application_status(job_code,validated_data):
             status_code
         )
 
-        return jsonify(response), status_code
-
     except Exception as e:
         logger.exception( "[UPDATE_STATUS_ERROR] job_code=%s error=%s", job_code, status_code, str(e))
-
         return jsonify({
             "error": "Internal server error"
         }), 500
+
+
+#internal endpoint for other services 
+@application_bp.route("/user-status")
+@jwt_required()
+def get_user_application_status():
+    try:
+        user_id = get_jwt_identity()
+        logger.info(
+            "[GET_APPLICATION_STATUS_START] user_id=%s",
+            user_id
+        )
+
+        response, status_code = get_application_status_service(user_id)
+
+        return jsonify(response), status_code
+    
+    except Exception as e:
+        logger.exception(
+            "[GET APPLICATION STATUS ERROR] user_id=%s error=%s",
+            user_id,
+            str(e)
+        )
+        return jsonify({
+            "error": "Internal server error"
+        }),500
+
 
 #user can delete the saved applications
 @application_bp.route("/<job_code>", methods=["DELETE"])
@@ -180,7 +208,6 @@ def delete_application(job_code):
             user_id,
             job_code
         )
-
         response, status_code = delete_application_service(user_id,job_code)
 
         logger.info(
@@ -197,7 +224,6 @@ def delete_application(job_code):
             status_code,
             str(e)
         )
-
         return jsonify({
             "error": "Internal server error"
         }), 500
