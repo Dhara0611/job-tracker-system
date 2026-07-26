@@ -121,3 +121,53 @@
 2026-07-24 18:54:31,992 WARNING werkzeug :  * Debugger is active!
 2026-07-24 18:54:31,998 INFO werkzeug :  * Debugger PIN: 833-047-769
 2026-07-24 18:54:50,641 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 18:54:50] "POST /auth/login HTTP/1.1" 200 -
+2026-07-25 14:38:51,769 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-07-25 14:38:51,769 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-07-25 14:38:51,770 INFO werkzeug :  * Restarting with stat
+2026-07-25 14:38:52,047 WARNING werkzeug :  * Debugger is active!
+2026-07-25 14:38:52,056 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-25 14:39:36,592 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 14:39:36] "POST /auth/login HTTP/1.1" 200 -
+2026-07-25 16:05:46,872 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-07-25 16:05:46,872 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-07-25 16:05:46,872 INFO werkzeug :  * Restarting with stat
+2026-07-25 16:05:47,139 WARNING werkzeug :  * Debugger is active!
+2026-07-25 16:05:47,146 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-25 16:05:54,655 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 16:05:54] "POST /auth/login HTTP/1.1" 200 -
+2026-07-25 16:07:28,937 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 16:07:28] "[32mPOST /preferences HTTP/1.1[0m" 308 -
+2026-07-25 16:07:28,950 INFO app.blueprints.preferences.services : Upsert is called for user_id=3
+2026-07-25 16:07:28,958 INFO app.blueprints.preferences.services : Committing preferences to database
+2026-07-25 16:07:28,963 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 16:07:28] "POST /preferences/ HTTP/1.1" 200 -
+2026-07-25 16:08:52,137 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 16:08:52] "[32mGET /preferences HTTP/1.1[0m" 308 -
+2026-07-25 16:08:52,145 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 16:08:52] "GET /preferences/ HTTP/1.1" 200 -
+2026-07-25 16:51:07,378 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 16:51:07] "POST /auth/login HTTP/1.1" 200 -
+2026-07-25 16:51:48,960 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 16:51:48] "[32mGET /preferences HTTP/1.1[0m" 308 -
+2026-07-25 16:51:48,967 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 16:51:48] "[31m[1mGET /preferences/ HTTP/1.1[0m" 401 -
+2026-07-25 17:00:10,872 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:00:10] "[32mGET /preferences HTTP/1.1[0m" 308 -
+2026-07-25 17:00:10,887 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:00:10] "GET /preferences/ HTTP/1.1" 200 -
+2026-07-25 17:03:28,389 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:03:28] "[32mGET /preferences HTTP/1.1[0m" 308 -
+2026-07-25 17:03:28,404 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:03:28] "GET /preferences/ HTTP/1.1" 200 -
+2026-07-25 17:04:19,656 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:04:19] "POST /auth/login HTTP/1.1" 200 -
+2026-07-25 17:04:46,557 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:04:46] "[32mGET /preferences HTTP/1.1[0m" 308 -
+2026-07-25 17:04:46,564 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:04:46] "GET /preferences/ HTTP/1.1" 200 -
+2026-07-25 17:09:48,045 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:09:48] "[32mGET /preferences HTTP/1.1[0m" 308 -
+2026-07-25 17:09:48,063 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:09:48] "GET /preferences/ HTTP/1.1" 200 -
+2026-07-25 17:11:19,403 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:11:19] "[32mPOST /preferences HTTP/1.1[0m" 308 -
+2026-07-25 17:11:19,412 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:11:19] "[31m[1mPOST /preferences/ HTTP/1.1[0m" 401 -
+2026-07-25 17:11:23,575 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:11:23] "POST /auth/login HTTP/1.1" 200 -
+2026-07-25 17:12:03,693 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:12:03] "[32mGET /preferences HTTP/1.1[0m" 308 -
+2026-07-25 17:12:03,706 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:12:03] "GET /preferences/ HTTP/1.1" 200 -
+2026-07-25 17:12:15,861 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:12:15] "[32mGET /preferences HTTP/1.1[0m" 308 -
+2026-07-25 17:12:15,869 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:12:15] "GET /preferences/ HTTP/1.1" 200 -
+2026-07-25 17:14:01,744 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:14:01] "[32mGET /preferences HTTP/1.1[0m" 308 -
+2026-07-25 17:14:01,758 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:14:01] "GET /preferences/ HTTP/1.1" 200 -
+2026-07-25 17:16:46,264 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:16:46] "[32mGET /preferences HTTP/1.1[0m" 308 -
+2026-07-25 17:16:46,297 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:16:46] "GET /preferences/ HTTP/1.1" 200 -
+2026-07-25 17:20:33,091 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:20:33] "[32mGET /preferences HTTP/1.1[0m" 308 -
+2026-07-25 17:20:33,104 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:20:33] "GET /preferences/ HTTP/1.1" 200 -
+2026-07-25 17:20:52,392 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:20:52] "POST /auth/login HTTP/1.1" 200 -
+2026-07-25 17:21:19,710 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:21:19] "[32mGET /preferences HTTP/1.1[0m" 308 -
+2026-07-25 17:21:19,746 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:21:19] "GET /preferences/ HTTP/1.1" 200 -
+2026-07-25 17:21:47,463 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:21:47] "[32mGET /preferences HTTP/1.1[0m" 308 -
+2026-07-25 17:21:47,482 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:21:47] "GET /preferences/ HTTP/1.1" 200 -
