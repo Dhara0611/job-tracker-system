@@ -603,3 +603,31 @@ requests.exceptions.HTTPError: 500 Server Error: INTERNAL SERVER ERROR for url: 
 2026-07-24 18:56:28,050 WARNING werkzeug :  * Debugger is active!
 2026-07-24 18:56:28,057 INFO werkzeug :  * Debugger PIN: 833-047-769
 2026-07-24 18:56:36,631 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 18:56:36] "[31m[1mPOST /api/v1/applications/apply HTTP/1.1[0m" 400 -
+2026-07-25 14:41:43,088 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5002
+2026-07-25 14:41:43,089 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-07-25 14:41:43,089 INFO werkzeug :  * Restarting with stat
+2026-07-25 14:41:43,399 WARNING werkzeug :  * Debugger is active!
+2026-07-25 14:41:43,405 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-25 14:41:47,534 INFO app.blueprints.applications.routes : [GET_APPLICATION_STATUS_START] user_id=3
+2026-07-25 14:41:47,551 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 14:41:47] "GET /api/v1/applications/user-status HTTP/1.1" 200 -
+2026-07-25 17:09:36,688 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5002
+2026-07-25 17:09:36,688 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-07-25 17:09:36,689 INFO werkzeug :  * Restarting with stat
+2026-07-25 17:09:36,975 WARNING werkzeug :  * Debugger is active!
+2026-07-25 17:09:36,981 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-25 17:09:48,012 INFO app.blueprints.applications.routes : [GET_APPLICATION_STATUS_START] user_id=3
+2026-07-25 17:09:48,029 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:09:48] "GET /api/v1/applications/user-status HTTP/1.1" 200 -
+2026-07-25 17:12:15,850 INFO app.blueprints.applications.routes : [GET_APPLICATION_STATUS_START] user_id=3
+2026-07-25 17:12:15,856 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:12:15] "GET /api/v1/applications/user-status HTTP/1.1" 200 -
+2026-07-25 17:14:01,727 INFO app.blueprints.applications.routes : [GET_APPLICATION_STATUS_START] user_id=3
+2026-07-25 17:14:01,733 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:14:01] "GET /api/v1/applications/user-status HTTP/1.1" 200 -
+2026-07-25 17:16:46,252 INFO app.blueprints.applications.routes : [GET_APPLICATION_STATUS_START] user_id=3
+2026-07-25 17:16:46,256 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:16:46] "GET /api/v1/applications/user-status HTTP/1.1" 200 -
+2026-07-25 17:20:33,076 INFO app.blueprints.applications.routes : [GET_APPLICATION_STATUS_START] user_id=3
+2026-07-25 17:20:33,081 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:20:33] "GET /api/v1/applications/user-status HTTP/1.1" 200 -
+2026-07-25 17:21:19,679 INFO app.blueprints.applications.routes : [GET_APPLICATION_STATUS_START] user_id=3
+2026-07-25 17:21:19,700 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:21:19] "GET /api/v1/applications/user-status HTTP/1.1" 200 -
+2026-07-25 17:21:47,450 INFO app.blueprints.applications.routes : [GET_APPLICATION_STATUS_START] user_id=3
+2026-07-25 17:21:47,455 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:21:47] "GET /api/v1/applications/user-status HTTP/1.1" 200 -

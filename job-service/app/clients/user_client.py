@@ -3,12 +3,12 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-APPLICATION_SERVICE_URL = "http://127.0.0.1:5002"
+USER_SERVICE_URL = "http://127.0.0.1:5000"
 
-def get_application_status(token):
+def get_user_preferences(token):
     try:
         response = requests.get(
-            f"{APPLICATION_SERVICE_URL}/api/v1/applications/user-status",
+            f"{USER_SERVICE_URL}/preferences",
             headers={
                 "Authorization" : token
             },
@@ -16,13 +16,16 @@ def get_application_status(token):
             timeout=5
             )
         response.raise_for_status()
-        return response.json()
+
+        logger.info("User preferences response: %s", response)
+
+        response_data =response.json()
+        logger.info("User preferences response: %s", response_data)
+        return response_data
+    
     except requests.exceptions.RequestException as e:
         logger.exception(
-            "[APPLICATION_SERVICE_ERROR] error=%s",
+            "[USER_SERVICE_ERROR] error=%s",
             str(e)
         )
-        return {
-            "data": {}
-        }
-
+        return None

@@ -1,12 +1,13 @@
 import logging
 from flask import Blueprint, jsonify, request
 from flask_jwt_extended import jwt_required, get_jwt_identity, get_jwt
-from app.blueprints.jobs.service import get_all_jobs, create_job, get_job_by_code, search_jobs
+from app.blueprints.jobs.service import get_all_jobs, create_job, get_job_by_code, search_jobs,get_personalized_jobs
 from app.models import Job
 from app.extensions import db
 from app.validators.job_validator import JobSchema
 from app.validators.decorators import validate_schema
 from app.clients.application_client import get_application_status
+from app.clients.user_client import get_user_preferences
 
 logger = logging.getLogger(__name__)
 
@@ -42,7 +43,8 @@ def get_jobs():
     limit = request.args.get("limit", 10, type=int)
 
     logger.debug("Search params: q=%s, title=%s, company=%s, location=%s, page=%s, limit=%s", q, title, company, location, page, limit)
-    jobs, total = search_jobs(q, title, company, location, page, limit)
+    # jobs, total = search_jobs(q, title, company, location, page, limit)
+    jobs, total = get_personalized_jobs(token, q, title, company, location, page, limit)
 
     list_of_jobs = []
     
@@ -155,6 +157,19 @@ def close_job(job_code):
         "job code" : job.job_code,
         "status" : job.status
     }),200
+
+
+
+@jobs_bp.route("/test-preferences")
+@jwt_required()
+def test_preferences():
+    token = request.headers.get("Authorization")
+
+    preferences = get_user_preferences(token)
+
+    return jsonify({
+        "preferences": preferences
+    }), 200
 
 
 

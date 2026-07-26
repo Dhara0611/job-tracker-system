@@ -382,3 +382,507 @@ AttributeError: 'Job' object has no attribute 'jobcode'
 2026-07-24 18:55:42,755 WARNING werkzeug :  * Debugger is active!
 2026-07-24 18:55:42,763 INFO werkzeug :  * Debugger PIN: 833-047-769
 2026-07-24 18:56:36,630 INFO werkzeug : 127.0.0.1 - - [24/Jul/2026 18:56:36] "GET /api/v1/jobs/google-01 HTTP/1.1" 200 -
+2026-07-25 16:05:26,504 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2026-07-25 16:05:26,504 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-07-25 16:05:26,504 INFO werkzeug :  * Restarting with stat
+2026-07-25 16:05:26,806 WARNING werkzeug :  * Debugger is active!
+2026-07-25 16:05:26,818 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-25 16:08:52,146 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 16:08:52] "GET /api/v1/jobs/test-preferences HTTP/1.1" 200 -
+2026-07-25 16:10:53,384 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/service.py', reloading
+2026-07-25 16:10:53,479 INFO werkzeug :  * Restarting with stat
+2026-07-25 16:10:53,992 WARNING werkzeug :  * Debugger is active!
+2026-07-25 16:10:54,001 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-25 16:15:50,214 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/recommendation.py', reloading
+2026-07-25 16:15:50,321 INFO werkzeug :  * Restarting with stat
+2026-07-25 16:15:50,826 WARNING werkzeug :  * Debugger is active!
+2026-07-25 16:15:50,837 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-25 16:15:58,991 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/recommendation.py', reloading
+2026-07-25 16:15:59,071 INFO werkzeug :  * Restarting with stat
+2026-07-25 16:15:59,632 WARNING werkzeug :  * Debugger is active!
+2026-07-25 16:15:59,639 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-25 16:18:19,933 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/service.py', reloading
+2026-07-25 16:18:20,019 INFO werkzeug :  * Restarting with stat
+2026-07-25 16:18:20,471 WARNING werkzeug :  * Debugger is active!
+2026-07-25 16:18:20,477 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-25 16:21:48,807 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/service.py', reloading
+2026-07-25 16:21:48,905 INFO werkzeug :  * Restarting with stat
+2026-07-25 16:21:49,390 WARNING werkzeug :  * Debugger is active!
+2026-07-25 16:21:49,399 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-25 16:21:53,490 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/service.py', reloading
+2026-07-25 16:21:53,581 INFO werkzeug :  * Restarting with stat
+2026-07-25 16:21:53,889 WARNING werkzeug :  * Debugger is active!
+2026-07-25 16:21:53,893 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-25 16:22:18,442 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/service.py', reloading
+2026-07-25 16:22:18,544 INFO werkzeug :  * Restarting with stat
+2026-07-25 16:22:18,957 WARNING werkzeug :  * Debugger is active!
+2026-07-25 16:22:18,964 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-25 16:22:26,193 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/service.py', reloading
+2026-07-25 16:22:26,388 INFO werkzeug :  * Restarting with stat
+2026-07-25 16:22:27,079 WARNING werkzeug :  * Debugger is active!
+2026-07-25 16:22:27,091 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-25 16:38:12,964 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/service.py', reloading
+2026-07-25 16:38:13,061 INFO werkzeug :  * Restarting with stat
+2026-07-25 16:38:13,579 WARNING werkzeug :  * Debugger is active!
+2026-07-25 16:38:13,587 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-25 16:38:49,369 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/service.py', reloading
+2026-07-25 16:38:49,485 INFO werkzeug :  * Restarting with stat
+2026-07-25 16:38:49,978 WARNING werkzeug :  * Debugger is active!
+2026-07-25 16:38:49,986 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-25 16:39:20,571 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/service.py', reloading
+2026-07-25 16:39:20,654 INFO werkzeug :  * Restarting with stat
+2026-07-25 16:39:21,101 WARNING werkzeug :  * Debugger is active!
+2026-07-25 16:39:21,107 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-25 16:39:40,537 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/service.py', reloading
+2026-07-25 16:39:40,633 INFO werkzeug :  * Restarting with stat
+2026-07-25 16:39:41,052 WARNING werkzeug :  * Debugger is active!
+2026-07-25 16:39:41,061 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-25 16:39:49,241 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/service.py', reloading
+2026-07-25 16:39:49,332 INFO werkzeug :  * Restarting with stat
+2026-07-25 16:39:49,741 WARNING werkzeug :  * Debugger is active!
+2026-07-25 16:39:49,747 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-25 16:40:05,068 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/service.py', reloading
+2026-07-25 16:40:05,153 INFO werkzeug :  * Restarting with stat
+2026-07-25 16:40:05,602 WARNING werkzeug :  * Debugger is active!
+2026-07-25 16:40:05,607 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-25 16:41:50,668 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/service.py', reloading
+2026-07-25 16:41:50,763 INFO werkzeug :  * Restarting with stat
+2026-07-25 16:41:51,199 WARNING werkzeug :  * Debugger is active!
+2026-07-25 16:41:51,207 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-25 16:45:31,380 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/service.py', reloading
+2026-07-25 16:45:31,476 INFO werkzeug :  * Restarting with stat
+2026-07-25 16:45:31,968 WARNING werkzeug :  * Debugger is active!
+2026-07-25 16:45:31,975 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-25 16:47:20,315 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/service.py', reloading
+2026-07-25 16:47:20,436 INFO werkzeug :  * Restarting with stat
+2026-07-25 16:47:20,921 WARNING werkzeug :  * Debugger is active!
+2026-07-25 16:47:20,929 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-25 16:49:19,455 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/routes.py', reloading
+2026-07-25 16:49:19,563 INFO werkzeug :  * Restarting with stat
+2026-07-25 16:49:20,048 WARNING werkzeug :  * Debugger is active!
+2026-07-25 16:49:20,056 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-25 16:49:52,809 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/routes.py', reloading
+2026-07-25 16:49:52,899 INFO werkzeug :  * Restarting with stat
+2026-07-25 16:49:53,351 WARNING werkzeug :  * Debugger is active!
+2026-07-25 16:49:53,357 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-25 16:51:48,908 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 16:51:48] "[32mGET /api/v1/jobs HTTP/1.1[0m" 308 -
+2026-07-25 16:51:48,935 ERROR app.clients.application_client : [APPLICATION_SERVICE_ERROR] error=HTTPConnectionPool(host='127.0.0.1', port=5002): Max retries exceeded with url: /api/v1/applications/user-status (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=5002): Failed to establish a new connection: [Errno 61] Connection refused"))
+Traceback (most recent call last):
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/connection.py", line 500, in request
+    self.endheaders()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1252, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1012, in _send_output
+    self.send(msg)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 952, in send
+    self.connect()
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/connection.py", line 331, in connect
+    self.sock = self._new_conn()
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/connection.py", line 219, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: HTTPConnection(host='127.0.0.1', port=5002): Failed to establish a new connection: [Errno 61] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/util/retry.py", line 535, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=5002): Max retries exceeded with url: /api/v1/applications/user-status (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=5002): Failed to establish a new connection: [Errno 61] Connection refused"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/clients/application_client.py", line 10, in get_application_status
+    response = requests.get(
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/requests/adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=5002): Max retries exceeded with url: /api/v1/applications/user-status (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=5002): Failed to establish a new connection: [Errno 61] Connection refused"))
+2026-07-25 16:51:48,948 INFO app.blueprints.jobs.routes : Fetching job list
+2026-07-25 16:51:48,967 ERROR app.clients.user_client : [USER_SERVICE_ERROR] error=401 Client Error: UNAUTHORIZED for url: http://127.0.0.1:5000/preferences/
+Traceback (most recent call last):
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/clients/user_client.py", line 18, in get_user_preferences
+    response.raise_for_status()
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: UNAUTHORIZED for url: http://127.0.0.1:5000/preferences/
+2026-07-25 16:51:48,972 ERROR app : Unhandled exception: 'NoneType' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask_jwt_extended/view_decorators.py", line 170, in decorator
+    return current_app.ensure_sync(fn)(*args, **kwargs)
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/routes.py", line 47, in get_jobs
+    jobs, total = get_personalized_jobs(q, title, company, location, page, limit)
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/service.py", line 101, in get_personalized_jobs
+    preferences = preferences_response.get("preferences",{})
+AttributeError: 'NoneType' object has no attribute 'get'
+2026-07-25 16:51:48,978 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 16:51:48] "[35m[1mGET /api/v1/jobs/ HTTP/1.1[0m" 500 -
+2026-07-25 17:00:05,429 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/routes.py', reloading
+2026-07-25 17:00:05,534 INFO werkzeug :  * Restarting with stat
+2026-07-25 17:00:06,036 WARNING werkzeug :  * Debugger is active!
+2026-07-25 17:00:06,043 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-25 17:00:10,825 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:00:10] "[32mGET /api/v1/jobs HTTP/1.1[0m" 308 -
+2026-07-25 17:00:10,848 ERROR app.clients.application_client : [APPLICATION_SERVICE_ERROR] error=HTTPConnectionPool(host='127.0.0.1', port=5002): Max retries exceeded with url: /api/v1/applications/user-status (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=5002): Failed to establish a new connection: [Errno 61] Connection refused"))
+Traceback (most recent call last):
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/connection.py", line 500, in request
+    self.endheaders()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1252, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1012, in _send_output
+    self.send(msg)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 952, in send
+    self.connect()
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/connection.py", line 331, in connect
+    self.sock = self._new_conn()
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/connection.py", line 219, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: HTTPConnection(host='127.0.0.1', port=5002): Failed to establish a new connection: [Errno 61] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/util/retry.py", line 535, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=5002): Max retries exceeded with url: /api/v1/applications/user-status (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=5002): Failed to establish a new connection: [Errno 61] Connection refused"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/clients/application_client.py", line 10, in get_application_status
+    response = requests.get(
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/requests/adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=5002): Max retries exceeded with url: /api/v1/applications/user-status (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=5002): Failed to establish a new connection: [Errno 61] Connection refused"))
+2026-07-25 17:00:10,863 INFO app.blueprints.jobs.routes : Fetching job list
+2026-07-25 17:00:10,888 INFO app.blueprints.jobs.service : Searching jobs
+2026-07-25 17:00:10,894 INFO app.blueprints.jobs.service : Search returned 7 jobs
+2026-07-25 17:00:10,894 INFO app.blueprints.jobs.recommendation : No preferences found. Returning jobs without ranking
+2026-07-25 17:00:10,895 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:00:10] "GET /api/v1/jobs/ HTTP/1.1" 200 -
+2026-07-25 17:03:18,294 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/recommendation.py', reloading
+2026-07-25 17:03:18,396 INFO werkzeug :  * Restarting with stat
+2026-07-25 17:03:18,904 WARNING werkzeug :  * Debugger is active!
+2026-07-25 17:03:18,910 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-25 17:03:28,347 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:03:28] "[32mGET /api/v1/jobs HTTP/1.1[0m" 308 -
+2026-07-25 17:03:28,369 ERROR app.clients.application_client : [APPLICATION_SERVICE_ERROR] error=HTTPConnectionPool(host='127.0.0.1', port=5002): Max retries exceeded with url: /api/v1/applications/user-status (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=5002): Failed to establish a new connection: [Errno 61] Connection refused"))
+Traceback (most recent call last):
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/connection.py", line 500, in request
+    self.endheaders()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1252, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1012, in _send_output
+    self.send(msg)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 952, in send
+    self.connect()
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/connection.py", line 331, in connect
+    self.sock = self._new_conn()
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/connection.py", line 219, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: HTTPConnection(host='127.0.0.1', port=5002): Failed to establish a new connection: [Errno 61] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/util/retry.py", line 535, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=5002): Max retries exceeded with url: /api/v1/applications/user-status (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=5002): Failed to establish a new connection: [Errno 61] Connection refused"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/clients/application_client.py", line 10, in get_application_status
+    response = requests.get(
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/requests/adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=5002): Max retries exceeded with url: /api/v1/applications/user-status (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=5002): Failed to establish a new connection: [Errno 61] Connection refused"))
+2026-07-25 17:03:28,381 INFO app.blueprints.jobs.routes : Fetching job list
+2026-07-25 17:03:28,405 INFO app.blueprints.jobs.service : Searching jobs
+2026-07-25 17:03:28,418 INFO app.blueprints.jobs.service : Search returned 7 jobs
+2026-07-25 17:03:28,418 INFO app.blueprints.jobs.recommendation : No preferences found. Returning jobs without ranking
+2026-07-25 17:03:28,418 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:03:28] "GET /api/v1/jobs/ HTTP/1.1" 200 -
+2026-07-25 17:04:46,530 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:04:46] "[32mGET /api/v1/jobs HTTP/1.1[0m" 308 -
+2026-07-25 17:04:46,547 ERROR app.clients.application_client : [APPLICATION_SERVICE_ERROR] error=HTTPConnectionPool(host='127.0.0.1', port=5002): Max retries exceeded with url: /api/v1/applications/user-status (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=5002): Failed to establish a new connection: [Errno 61] Connection refused"))
+Traceback (most recent call last):
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/connection.py", line 500, in request
+    self.endheaders()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1252, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 1012, in _send_output
+    self.send(msg)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/client.py", line 952, in send
+    self.connect()
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/connection.py", line 331, in connect
+    self.sock = self._new_conn()
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/connection.py", line 219, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: HTTPConnection(host='127.0.0.1', port=5002): Failed to establish a new connection: [Errno 61] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/urllib3/util/retry.py", line 535, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=5002): Max retries exceeded with url: /api/v1/applications/user-status (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=5002): Failed to establish a new connection: [Errno 61] Connection refused"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/clients/application_client.py", line 10, in get_application_status
+    response = requests.get(
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/requests/adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=5002): Max retries exceeded with url: /api/v1/applications/user-status (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=5002): Failed to establish a new connection: [Errno 61] Connection refused"))
+2026-07-25 17:04:46,550 INFO app.blueprints.jobs.routes : Fetching job list
+2026-07-25 17:04:46,564 INFO app.blueprints.jobs.service : Searching jobs
+2026-07-25 17:04:46,567 INFO app.blueprints.jobs.service : Search returned 7 jobs
+2026-07-25 17:04:46,567 INFO app.blueprints.jobs.recommendation : No preferences found. Returning jobs without ranking
+2026-07-25 17:04:46,569 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:04:46] "GET /api/v1/jobs/ HTTP/1.1" 200 -
+2026-07-25 17:09:47,991 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:09:47] "[32mGET /api/v1/jobs HTTP/1.1[0m" 308 -
+2026-07-25 17:09:48,030 INFO app.blueprints.jobs.routes : Fetching job list
+2026-07-25 17:09:48,064 INFO app.blueprints.jobs.service : Searching jobs
+2026-07-25 17:09:48,073 INFO app.blueprints.jobs.service : Search returned 7 jobs
+2026-07-25 17:09:48,073 INFO app.blueprints.jobs.recommendation : No preferences found. Returning jobs without ranking
+2026-07-25 17:09:48,074 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:09:48] "GET /api/v1/jobs/ HTTP/1.1" 200 -
+2026-07-25 17:12:03,708 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:12:03] "GET /api/v1/jobs/test-preferences HTTP/1.1" 200 -
+2026-07-25 17:12:15,841 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:12:15] "[32mGET /api/v1/jobs HTTP/1.1[0m" 308 -
+2026-07-25 17:12:15,857 INFO app.blueprints.jobs.routes : Fetching job list
+2026-07-25 17:12:15,870 INFO app.blueprints.jobs.service : Searching jobs
+2026-07-25 17:12:15,874 INFO app.blueprints.jobs.service : Search returned 7 jobs
+2026-07-25 17:12:15,874 INFO app.blueprints.jobs.recommendation : No preferences found. Returning jobs without ranking
+2026-07-25 17:12:15,875 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:12:15] "GET /api/v1/jobs/ HTTP/1.1" 200 -
+2026-07-25 17:12:59,304 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/clients/user_client.py', reloading
+2026-07-25 17:12:59,422 INFO werkzeug :  * Restarting with stat
+2026-07-25 17:12:59,923 WARNING werkzeug :  * Debugger is active!
+2026-07-25 17:12:59,930 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-25 17:13:01,982 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/clients/user_client.py', reloading
+2026-07-25 17:13:02,063 INFO werkzeug :  * Restarting with stat
+2026-07-25 17:13:02,378 WARNING werkzeug :  * Debugger is active!
+2026-07-25 17:13:02,384 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-25 17:13:05,466 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/clients/user_client.py', reloading
+2026-07-25 17:13:05,536 INFO werkzeug :  * Restarting with stat
+2026-07-25 17:13:05,846 WARNING werkzeug :  * Debugger is active!
+2026-07-25 17:13:05,854 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-25 17:13:45,798 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/clients/user_client.py', reloading
+2026-07-25 17:13:45,990 INFO werkzeug :  * Restarting with stat
+2026-07-25 17:13:46,482 WARNING werkzeug :  * Debugger is active!
+2026-07-25 17:13:46,491 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-25 17:13:53,659 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/clients/user_client.py', reloading
+2026-07-25 17:13:53,742 INFO werkzeug :  * Restarting with stat
+2026-07-25 17:13:54,158 WARNING werkzeug :  * Debugger is active!
+2026-07-25 17:13:54,166 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-25 17:14:01,703 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:14:01] "[32mGET /api/v1/jobs HTTP/1.1[0m" 308 -
+2026-07-25 17:14:01,734 INFO app.blueprints.jobs.routes : Fetching job list
+2026-07-25 17:14:01,758 INFO app.clients.user_client : User preferences response: <Response [200]>
+2026-07-25 17:14:01,759 INFO app.clients.user_client : User preferences response: {'experience': 'Senior', 'location': 'California', 'role': 'Software Engineer', 'salary_max': 120000, 'salary_min': 120000}
+2026-07-25 17:14:01,759 INFO app.blueprints.jobs.service : Searching jobs
+2026-07-25 17:14:01,774 INFO app.blueprints.jobs.service : Search returned 7 jobs
+2026-07-25 17:14:01,774 INFO app.blueprints.jobs.recommendation : No preferences found. Returning jobs without ranking
+2026-07-25 17:14:01,775 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:14:01] "GET /api/v1/jobs/ HTTP/1.1" 200 -
+2026-07-25 17:16:43,272 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/service.py', reloading
+2026-07-25 17:16:43,385 INFO werkzeug :  * Restarting with stat
+2026-07-25 17:16:43,923 WARNING werkzeug :  * Debugger is active!
+2026-07-25 17:16:43,929 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-25 17:16:46,229 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:16:46] "[32mGET /api/v1/jobs HTTP/1.1[0m" 308 -
+2026-07-25 17:16:46,258 INFO app.blueprints.jobs.routes : Fetching job list
+2026-07-25 17:16:46,298 INFO app.clients.user_client : User preferences response: <Response [200]>
+2026-07-25 17:16:46,298 INFO app.clients.user_client : User preferences response: {'experience': 'Senior', 'location': 'California', 'role': 'Software Engineer', 'salary_max': 120000, 'salary_min': 120000}
+2026-07-25 17:16:46,298 INFO app.blueprints.jobs.service : Searching jobs
+2026-07-25 17:16:46,305 INFO app.blueprints.jobs.service : Search returned 7 jobs
+2026-07-25 17:16:46,305 INFO app.blueprints.jobs.recommendation : Job=Frontend Engineer score=0
+2026-07-25 17:16:46,305 ERROR app : Unhandled exception: 'NoneType' object has no attribute 'lower'
+Traceback (most recent call last):
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask_jwt_extended/view_decorators.py", line 170, in decorator
+    return current_app.ensure_sync(fn)(*args, **kwargs)
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/routes.py", line 47, in get_jobs
+    jobs, total = get_personalized_jobs(token, q, title, company, location, page, limit)
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/service.py", line 108, in get_personalized_jobs
+    jobs = rank_jobs_by_preferences(jobs,preferences)
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/recommendation.py", line 31, in rank_jobs_by_preferences
+    if preferences["location"].lower() in job.location.lower():
+AttributeError: 'NoneType' object has no attribute 'lower'
+2026-07-25 17:16:46,311 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:16:46] "[35m[1mGET /api/v1/jobs/ HTTP/1.1[0m" 500 -
+2026-07-25 17:19:56,082 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/recommendation.py', reloading
+2026-07-25 17:19:56,214 INFO werkzeug :  * Restarting with stat
+2026-07-25 17:20:11,131 INFO werkzeug :  * Restarting with stat
+2026-07-25 17:20:13,684 INFO werkzeug :  * Restarting with stat
+2026-07-25 17:20:13,998 WARNING werkzeug :  * Debugger is active!
+2026-07-25 17:20:14,004 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-25 17:20:17,079 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/recommendation.py', reloading
+2026-07-25 17:20:17,158 INFO werkzeug :  * Restarting with stat
+2026-07-25 17:20:17,462 WARNING werkzeug :  * Debugger is active!
+2026-07-25 17:20:17,468 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-25 17:20:33,047 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:20:33] "[32mGET /api/v1/jobs HTTP/1.1[0m" 308 -
+2026-07-25 17:20:33,082 INFO app.blueprints.jobs.routes : Fetching job list
+2026-07-25 17:20:33,105 INFO app.clients.user_client : User preferences response: <Response [200]>
+2026-07-25 17:20:33,105 INFO app.clients.user_client : User preferences response: {'experience': 'Senior', 'location': 'California', 'role': 'Software Engineer', 'salary_max': 120000, 'salary_min': 120000}
+2026-07-25 17:20:33,105 INFO app.blueprints.jobs.service : Searching jobs
+2026-07-25 17:20:33,117 INFO app.blueprints.jobs.service : Search returned 7 jobs
+2026-07-25 17:20:33,117 ERROR app : Unhandled exception: 'Job' object has no attribute 'role'
+Traceback (most recent call last):
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask_jwt_extended/view_decorators.py", line 170, in decorator
+    return current_app.ensure_sync(fn)(*args, **kwargs)
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/routes.py", line 47, in get_jobs
+    jobs, total = get_personalized_jobs(token, q, title, company, location, page, limit)
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/service.py", line 108, in get_personalized_jobs
+    jobs = rank_jobs_by_preferences(jobs,preferences)
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/recommendation.py", line 26, in rank_jobs_by_preferences
+    if preferences.get("role") and job.role:
+AttributeError: 'Job' object has no attribute 'role'
+2026-07-25 17:20:33,123 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:20:33] "[35m[1mGET /api/v1/jobs/ HTTP/1.1[0m" 500 -
+2026-07-25 17:21:19,668 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:21:19] "[32mGET /api/v1/jobs HTTP/1.1[0m" 308 -
+2026-07-25 17:21:19,703 INFO app.blueprints.jobs.routes : Fetching job list
+2026-07-25 17:21:19,748 INFO app.clients.user_client : User preferences response: <Response [200]>
+2026-07-25 17:21:19,748 INFO app.clients.user_client : User preferences response: {'experience': 'Senior', 'location': 'California', 'role': 'Software Engineer', 'salary_max': 120000, 'salary_min': 120000}
+2026-07-25 17:21:19,749 INFO app.blueprints.jobs.service : Searching jobs
+2026-07-25 17:21:19,752 INFO app.blueprints.jobs.service : Search returned 7 jobs
+2026-07-25 17:21:19,752 ERROR app : Unhandled exception: 'Job' object has no attribute 'role'
+Traceback (most recent call last):
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/venv/lib/python3.9/site-packages/flask_jwt_extended/view_decorators.py", line 170, in decorator
+    return current_app.ensure_sync(fn)(*args, **kwargs)
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/routes.py", line 47, in get_jobs
+    jobs, total = get_personalized_jobs(token, q, title, company, location, page, limit)
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/service.py", line 108, in get_personalized_jobs
+    jobs = rank_jobs_by_preferences(jobs,preferences)
+  File "/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/recommendation.py", line 26, in rank_jobs_by_preferences
+    if preferences.get("role") and job.role:
+AttributeError: 'Job' object has no attribute 'role'
+2026-07-25 17:21:19,753 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:21:19] "[35m[1mGET /api/v1/jobs/ HTTP/1.1[0m" 500 -
+2026-07-25 17:21:41,067 INFO werkzeug :  * Detected change in '/Users/Dhara/work/Projects/Flask/job-tracker-system/job-service/app/blueprints/jobs/recommendation.py', reloading
+2026-07-25 17:21:41,171 INFO werkzeug :  * Restarting with stat
+2026-07-25 17:21:41,675 WARNING werkzeug :  * Debugger is active!
+2026-07-25 17:21:41,684 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-25 17:21:47,422 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:21:47] "[32mGET /api/v1/jobs HTTP/1.1[0m" 308 -
+2026-07-25 17:21:47,456 INFO app.blueprints.jobs.routes : Fetching job list
+2026-07-25 17:21:47,483 INFO app.clients.user_client : User preferences response: <Response [200]>
+2026-07-25 17:21:47,483 INFO app.clients.user_client : User preferences response: {'experience': 'Senior', 'location': 'California', 'role': 'Software Engineer', 'salary_max': 120000, 'salary_min': 120000}
+2026-07-25 17:21:47,483 INFO app.blueprints.jobs.service : Searching jobs
+2026-07-25 17:21:47,496 INFO app.blueprints.jobs.service : Search returned 7 jobs
+2026-07-25 17:21:47,496 INFO app.blueprints.jobs.recommendation : Job=Frontend Engineer score=0
+2026-07-25 17:21:47,496 INFO app.blueprints.jobs.recommendation : Job=Backend Engineer score=0
+2026-07-25 17:21:47,496 INFO app.blueprints.jobs.recommendation : Job=Software Engineer score=1
+2026-07-25 17:21:47,496 INFO app.blueprints.jobs.recommendation : Job=QA Engineer score=0
+2026-07-25 17:21:47,496 INFO app.blueprints.jobs.recommendation : Job=DevOps Engineer score=0
+2026-07-25 17:21:47,496 INFO app.blueprints.jobs.recommendation : Job=Cloud Engineer score=0
+2026-07-25 17:21:47,496 INFO app.blueprints.jobs.recommendation : Job=Mainframe Engineer score=0
+2026-07-25 17:21:47,497 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:21:47] "GET /api/v1/jobs/ HTTP/1.1" 200 -

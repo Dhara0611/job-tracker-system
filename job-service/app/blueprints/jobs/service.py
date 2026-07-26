@@ -1,6 +1,8 @@
 import logging
 from app.models import Job
 from app.extensions import db
+from app.clients.user_client import get_user_preferences
+from app.blueprints.jobs.recommendation import rank_jobs_by_preferences
 
 logger = logging.getLogger(__name__)
 
@@ -11,10 +13,11 @@ def get_all_jobs():
     # return list of job model objects
     return jobs
 
-def search_jobs(q=None, title=None, company=None, location=None, page=1, limit=10):
+# def search_jobs(q=None, title=None, company=None, location=None, page=1, limit=10):
+#Removing pagination from search jobs
+def search_jobs(q=None, title=None, company=None, location=None):
     logger.info("Searching jobs")
-    logger.debug("Search params: q=%s, title=%s, company=%s, location=%s, page=%s, limit=%s", q, title, company, location, page, limit)
-
+    
     query = Job.query
 
     if title:
@@ -35,16 +38,18 @@ def search_jobs(q=None, title=None, company=None, location=None, page=1, limit=1
                 (Job.location.ilike(f"%{q}%"))
             )
         )
-
+    #commenting to updated pagination logic
     # count the total number of records before applying offset and limit
-    total = query.count()
+    # total = query.count()
 
     # pagination logic 
-    offset = (page - 1) * limit
-    query = query.offset(offset).limit(limit)
+    # offset = (page - 1) * limit
+    # query = query.offset(offset).limit(limit)
     jobs = query.all()
     logger.info("Search returned %s jobs", len(jobs))
-    return jobs, total
+    # return jobs, total
+
+    return jobs
 
 def generate_job_code(company_name):
 
@@ -79,4 +84,32 @@ def create_job(data):
 
 def get_job_by_code(code):
     return Job.query.filter_by(job_code=code).first()
+
+
+def get_personalized_jobs(token,
+        q=None,
+        title=None,
+        company=None,
+        location=None,
+        page=1,
+        limit=10):
+    """
+    Fetch jobs and personalize based on user preferences.
+    """
+#calls user service to get user preferences
+    preferences_response = get_user_preferences(token)
+    
+    preferences = preferences_response or {}
+
+#search jobs will give us all the available jobs
+    jobs = search_jobs(q=q, title=title, company=company, location=location)
+
+#rank_jobs_by_preferences will rank the jobs based on jobs and user preferences and returns jobs in sorted order
+    jobs = rank_jobs_by_preferences(jobs,preferences)
+
+    total = len(jobs)
+    offset = (page - 1) * limit
+    jobs = jobs[offset: offset + limit]
+
+    return jobs, total
 
