@@ -171,3 +171,17 @@
 2026-07-25 17:21:19,746 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:21:19] "GET /preferences/ HTTP/1.1" 200 -
 2026-07-25 17:21:47,463 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:21:47] "[32mGET /preferences HTTP/1.1[0m" 308 -
 2026-07-25 17:21:47,482 INFO werkzeug : 127.0.0.1 - - [25/Jul/2026 17:21:47] "GET /preferences/ HTTP/1.1" 200 -
+2026-07-27 17:32:43,576 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-07-27 17:32:43,577 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-07-27 17:32:43,578 INFO werkzeug :  * Restarting with stat
+2026-07-27 17:32:43,851 WARNING werkzeug :  * Debugger is active!
+2026-07-27 17:32:43,861 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-27 17:39:42,308 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-07-27 17:39:42,309 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2026-07-27 17:39:42,309 INFO werkzeug :  * Restarting with stat
+2026-07-27 17:39:42,609 WARNING werkzeug :  * Debugger is active!
+2026-07-27 17:39:42,616 INFO werkzeug :  * Debugger PIN: 833-047-769
+2026-07-27 17:40:00,467 INFO werkzeug : 127.0.0.1 - - [27/Jul/2026 17:40:00] "[35m[1mPOST /auth/register HTTP/1.1[0m" 201 -
+2026-07-27 17:40:15,341 INFO werkzeug : 127.0.0.1 - - [27/Jul/2026 17:40:15] "POST /auth/login HTTP/1.1" 200 -
