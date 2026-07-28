@@ -65,5 +65,5 @@ def get_preferences_service(userid):
         "experience":pref.experience,
         "location":pref.location,
         "salary_min":pref.salary_min,
-        "salary_max":pref.salary_min
+        "salary_max":pref.salary_max
             },200

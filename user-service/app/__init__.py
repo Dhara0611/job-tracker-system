@@ -48,8 +48,8 @@ def create_app():
     jwt.init_app(app)
 
     #Blueprint registration
-    app.register_blueprint(auth_bp, url_prefix = "/auth")
-    app.register_blueprint(pref_bp, url_prefix = "/preferences")
+    app.register_blueprint(auth_bp, url_prefix = "/api/v1/auth")
+    app.register_blueprint(pref_bp, url_prefix = "/api/v1/preferences")
 
     
 
